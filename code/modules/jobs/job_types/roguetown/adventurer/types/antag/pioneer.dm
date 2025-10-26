@@ -33,7 +33,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
 	backl = /obj/item/storage/backpack/rogue/backpack/
 	backr = /obj/item/rogueweapon/shovel/saperka //40 force +1.5 dmg SMASH but SLOW. If your enemy is a mental retard and stays on one place you delete them
-	beltl = /obj/item/storage/detpack
+	beltl = /obj/item/storage/strapbag
 	beltr = /obj/item/flashlight/flare/torch/lantern
 	id = /obj/item/mattcoin
 	backpack_contents = list(
