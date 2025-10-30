@@ -14,7 +14,7 @@
 /obj/item/necro_relics/necro_crystal/attack_self(mob/living/user)
 	..()
 
-	if(!user) 
+	if(!user)
 		return FALSE
 	if(world.time - src.last_use_time < src.use_cooldown)
 		to_chat(user, span_warning("The crystal thrums under your touch, but remains inert."))
@@ -30,7 +30,7 @@
 		user.flash_fullscreen("redflash1")
 		new /obj/item/natural/glass_shard(get_turf(src))
 		playsound(src, "glassbreak", 70, TRUE)
-		qdel(src) 
+		qdel(src)
 		return FALSE
 
 	var/turf/T = get_step(user, user.dir)
@@ -58,12 +58,13 @@
 	addtimer(CALLBACK(target, TYPE_PROC_REF(/mob/living/carbon/human, choose_name_popup), "FORTIFIED SKELETON"), 3 SECONDS)
 	addtimer(CALLBACK(target, TYPE_PROC_REF(/mob/living/carbon/human, choose_pronouns_and_body)), 7 SECONDS)
 	target.mind.AddSpell(new /obj/effect/proc_holder/spell/self/suicidebomb/lesser)
+	target.faction |= list("[user.mind.current.real_name]_faction")
 
 	to_chat(user, span_notice("The crystal dissipates into dust."))
 	user.flash_fullscreen("redflash1")
 	new /obj/item/natural/glass_shard(get_turf(src))
 	playsound(src, "shatter", 70, TRUE)
-	qdel(src) 
+	qdel(src)
 
 	return TRUE
 
