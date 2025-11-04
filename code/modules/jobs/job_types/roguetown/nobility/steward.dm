@@ -17,7 +17,7 @@
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_noble.ogg'
-
+	social_rank = SOCIAL_RANK_NOBLE
 	advclass_cat_rolls = list(CTAG_STEWARD = 2)
 	virtue_restrictions = list(/datum/virtue/utility/blacksmith)
 

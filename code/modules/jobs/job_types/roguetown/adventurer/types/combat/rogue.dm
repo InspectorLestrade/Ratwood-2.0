@@ -5,6 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/rogue
 	cmode_music = 'sound/music/cmode/adventurer/combat_outlander3.ogg'
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_SEEPRICES, TRAIT_GRAVEROBBER)
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
 	class_select_category = CLASS_CAT_ROGUE
@@ -47,8 +48,8 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backpack_contents = list(
-		/obj/item/lockpick = 1, 
-		/obj/item/rogueweapon/huntingknife = 1, 
+		/obj/item/lockpick = 1,
+		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/recipe_book/survival = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)

@@ -2,6 +2,7 @@
 	name = "Brewer"
 	tutorial = "You make your coin peddling imported alcohols from all over the world, though you're no stranger to the craft, and have experience brewing your own ale in a pinch. You have the equipments and know how on how to make your own distiller, too."
 	outfit = /datum/outfit/job/roguetown/adventurer/brewer
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_CICERONE, TRAIT_HOMESTEAD_EXPERT)
 	class_select_category = CLASS_CAT_TRADER
 	category_tags = list(CTAG_TRADER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
@@ -39,14 +40,14 @@
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead = 1, 
+		/obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/beer/voddena = 1,
-		/obj/item/reagent_containers/glass/bottle/rogue/beer/blackgoat = 1, 
-		/obj/item/reagent_containers/glass/bottle/rogue/elfred = 1, 
-		/obj/item/reagent_containers/glass/bottle/rogue/elfblue = 1, 
+		/obj/item/reagent_containers/glass/bottle/rogue/beer/blackgoat = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/elfred = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/elfblue = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/ingot/copper = 2,
-		/obj/item/roguegear = 1, 
+		/obj/item/roguegear = 1,
 		/obj/item/bottle_kit = 1,
 		/obj/item/recipe_book/survival = 1)

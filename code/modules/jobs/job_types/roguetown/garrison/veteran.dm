@@ -18,7 +18,7 @@
 	min_pq = 5 //Should...probably actually be a veteran of at least a few weeks before trying to teach others
 	max_pq = null
 	round_contrib_points = 2
-
+	social_rank = SOCIAL_RANK_MINOR_NOBLE
 	cmode_music = 'sound/music/combat_veteran.ogg'
 	job_subclasses = list(
 		/datum/advclass/veteran/battlemaster,

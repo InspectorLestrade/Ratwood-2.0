@@ -3,6 +3,7 @@
 	tutorial = "Whether a disciple of a culinary school, a storied royal chef, or a mercenary cook for hire, your trade is plied at the counter, \
 	the cutting board, and the hearth."
 	outfit = /datum/outfit/job/roguetown/adventurer/cuisiner
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_GOODLOVER, TRAIT_HOMESTEAD_EXPERT)
 	class_select_category = CLASS_CAT_TRADER
 	category_tags = list(CTAG_TRADER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)

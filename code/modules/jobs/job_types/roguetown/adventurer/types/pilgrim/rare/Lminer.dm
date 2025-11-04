@@ -6,6 +6,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/minermaster
+	subclass_social_rank = SOCIAL_RANK_YEOMAN
 
 	maximum_possible_slots = 1
 	pickprob = 5
@@ -49,12 +50,12 @@
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/rogueweapon/pick
-	beltr = /obj/item/storage/hip/orestore/bronze 
+	beltr = /obj/item/storage/hip/orestore/bronze
 	backl = /obj/item/storage/backpack/rogue/backpack
 	backpack_contents = list(
 						/obj/item/flint = 1,
 						/obj/item/flashlight/flare/torch = 1,
-						/obj/item/rogueweapon/chisel = 1, 
+						/obj/item/rogueweapon/chisel = 1,
 						/obj/item/rogueweapon/hammer/wood = 1,
 						/obj/item/recipe_book/survival = 1,
 						/obj/item/recipe_book/builder = 1,

@@ -7,7 +7,7 @@
 	spawn_positions = 6
 
 	allowed_races = ACCEPTED_RACES
-	allowed_patrons = ALL_DIVINE_PATRONS 
+	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/monk
 	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Bishop in their daily tasks, maybe today will be the day something interesting happens."
@@ -17,7 +17,7 @@
 	min_pq = 1 //A step above Churchling, should funnel new players to the churchling role to learn miracles at a more sedate pace
 	max_pq = null
 	round_contrib_points = 5
-
+	social_rank = SOCIAL_RANK_MINOR_NOBLE
 	//No nobility for you, being a member of the clergy means you gave UP your nobility. It says this in many of the church tutorial texts.
 	virtue_restrictions = list(/datum/virtue/utility/noble)
 	job_traits = list(TRAIT_RITUALIST, TRAIT_GRAVEROBBER, TRAIT_HOMESTEAD_EXPERT)

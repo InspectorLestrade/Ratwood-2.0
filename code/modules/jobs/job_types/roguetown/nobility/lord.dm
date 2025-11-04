@@ -33,7 +33,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	give_bank_account = 1000
 	required = TRUE
 	cmode_music = 'sound/music/combat_noble.ogg'
-
+	social_rank = SOCIAL_RANK_ROYAL
 	// Can't use the Throat when you can't talk properly or.. at all for that matter.
 	vice_restrictions = list(/datum/charflaw/mute, /datum/charflaw/unintelligible)
 
@@ -185,7 +185,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/appraise/secular)
 
-/** 
+/**
 	Mage Lord subclass. Prince mage is a thing.
 	Light on skills, has some combat skills mage normally doesn't have. 18 pts so people don't complain they are better.
 	Stats is better than mage associate and magic heir. +12 total.
@@ -226,7 +226,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/roguegem/amethyst = 1, /obj/item/spellbook_unfinished/pre_arcyne = 1)
 
 /**
-	Wizard duke! We still want the court mage to be the most powerful wizard, 
+	Wizard duke! We still want the court mage to be the most powerful wizard,
 	but if a warrior duke can be about as strong as a Knight, then a wizard duke could probably afford to be as strong as a mage's associate. They'll get T3, no armor prof.
 */
 /datum/advclass/lord/wizard
@@ -260,7 +260,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
-	
+
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 		H.mind?.adjust_spellpoints(27) //More than an Associate actually gets- but much like how the Warrior Duke gets a set of full blacksteel plate, I think we can give the mage duke a little something extra.

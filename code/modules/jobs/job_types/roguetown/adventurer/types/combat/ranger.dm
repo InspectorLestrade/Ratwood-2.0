@@ -6,6 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/ranger
 	class_select_category = CLASS_CAT_RANGER
 	cmode_music = 'sound/music/cmode/adventurer/combat_outlander3.ogg'
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_OUTDOORSMAN)
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
 	subclass_stats = list(

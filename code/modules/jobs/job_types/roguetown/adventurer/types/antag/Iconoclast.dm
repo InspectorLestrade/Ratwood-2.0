@@ -4,6 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ACCEPTED_RACES
 	outfit = /datum/outfit/job/roguetown/bandit/iconoclast
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	category_tags = list(CTAG_BANDIT)
 	maximum_possible_slots = 1 // We only want one of these.
 	traits_applied = list(
@@ -15,7 +16,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 3,// LETS WRASSLE
 		STATKEY_WIL = 3,// This is our Go Big stat, we want lots of stamina for miracles and WRASSLIN.
-		STATKEY_LCK = 2,//We have a total of +12 in stats. 
+		STATKEY_LCK = 2,//We have a total of +12 in stats.
 		STATKEY_CON = 1
 	)
 	subclass_skills = list(

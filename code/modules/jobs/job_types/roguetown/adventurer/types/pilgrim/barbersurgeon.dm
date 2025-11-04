@@ -4,6 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/doctor
+	subclass_social_rank = SOCIAL_RANK_YEOMAN
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	traits_applied = list(TRAIT_EMPATH, TRAIT_NOSTINK, TRAIT_MEDICINE_EXPERT, TRAIT_ALCHEMY_EXPERT)
 	cmode_music = 'sound/music/combat_physician.ogg'

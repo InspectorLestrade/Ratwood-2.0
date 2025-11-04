@@ -5,6 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/assassin/hitman
 	category_tags = list(CTAG_ASSASSIN)
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_BLACKBAGGER)	// Agent (15)47 - Lets you use the blackbag and garrote you
 	// Weighted 14
 	subclass_stats = list(

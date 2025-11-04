@@ -4,9 +4,10 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/hunter
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_SURVIVAL_EXPERT)
 	cmode_music = 'sound/music/cmode/towner/combat_towner2.ogg'
-	
+
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	subclass_stats = list(
 		STATKEY_PER = 3,
@@ -94,7 +95,7 @@
 		/datum/skill/misc/tracking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 	)
-	
+
 /datum/outfit/job/roguetown/adventurer/hunter_spear/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("You are a hunter who specializes in spears, excelling in strength and endurance."))

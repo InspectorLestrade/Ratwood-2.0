@@ -6,6 +6,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/farmermaster
+	subclass_social_rank = SOCIAL_RANK_YEOMAN
 	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
 
 	maximum_possible_slots = 1
@@ -30,7 +31,7 @@
 		/datum/skill/craft/cooking = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 	)
-	
+
 /datum/outfit/job/roguetown/adventurer/farmermaster/pre_equip(mob/living/carbon/human/H)
 	..()
 	belt = /obj/item/storage/belt/rogue/leather/rope

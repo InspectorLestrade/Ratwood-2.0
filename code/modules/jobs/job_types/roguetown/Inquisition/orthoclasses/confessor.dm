@@ -7,6 +7,7 @@
 	category_tags = list(CTAG_INQUISITION)
 	subclass_languages = list(/datum/language/otavan)
 	cmode_music = 'sound/music/cmode/antag/combat_deadlyshadows.ogg'
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(
 		TRAIT_DODGEEXPERT,
 		TRAIT_BLACKBAGGER,
@@ -23,7 +24,7 @@
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN, //Should rely on the seizing garrote to properly subdue foes.
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT, 
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN, //Ensures that captured individuals are less likely to die, if subdued with harsher force.
 		/datum/skill/misc/sneaking = SKILL_LEVEL_MASTER,
@@ -52,7 +53,7 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/knives, 4, TRUE)
 			if("Psydonic Handmace")
 				l_hand = /obj/item/rogueweapon/mace/cudgel/psy
-				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)	
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
 			if("Psydonic Shortsword")
 				l_hand = /obj/item/rogueweapon/sword/short/psy
 				r_hand = /obj/item/rogueweapon/scabbard/sword

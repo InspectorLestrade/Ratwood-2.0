@@ -20,7 +20,7 @@
 	)
 
 //Dismember a limb
-/obj/item/bodypart/proc/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone, damage = 0)
+/obj/item/bodypart/proc/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone, damage = 0, vorpal = FALSE)
 	if(!owner)
 		return FALSE
 	var/mob/living/carbon/C = owner
@@ -50,7 +50,7 @@
 
 	if(SEND_SIGNAL(src, COMSIG_MOB_DISMEMBER, src) & COMPONENT_CANCEL_DISMEMBER)
 		return FALSE //signal handled the dropping
-	
+
 	if(C.try_resist_critical())
 		C.visible_message(span_danger("Critical resistance! [C]'s [src.name] hangs on by a thread!</span>"))
 		return FALSE
@@ -59,15 +59,7 @@
 	if(affecting && dismember_wound)
 		affecting.add_wound(dismember_wound)
 	playsound(C, pick(dismemsound), 50, FALSE, -1)
-	if(body_zone == BODY_ZONE_HEAD)
-		C.visible_message(span_danger("<B>[C] is [pick("BRUTALLY","VIOLENTLY","BLOODILY","MESSILY")] DECAPITATED!</B>"))
-	else
-		C.visible_message(span_danger("<B>The [src.name] is [pick("torn off", "sundered", "severed", "separated", "unsewn")]!</B>"))
-	if(!HAS_TRAIT(C, TRAIT_NOPAIN))
-		C.emote("painscream")
-	if(!(NOBLOOD in C.dna?.species?.species_traits))
-		add_mob_blood(C)
-	C.add_stress(/datum/stressevent/dismembered)
+
 	var/stress2give = /datum/stressevent/viewdismember
 	var/guillotine_execution = FALSE
 	if(C.buckled)
@@ -76,6 +68,36 @@
 		if(istype(C.buckled, /obj/structure/fluff/psycross))
 			if(C.real_name in GLOB.excommunicated_players)
 				stress2give = /datum/stressevent/viewsinpunish
+
+	if(body_zone == BODY_ZONE_HEAD)
+		// decaps should happen in two phases: the first one inflicts a spinal column sever, killing them instantly.
+		// if they're already spinal-severed, THEN the head is removed.
+		// extra note: we only do this for mobs with a mind, aka not NPCS. npcs always get insta-decapped as before
+		if (owner?.client && !vorpal && !guillotine_execution && two_stage_death && !grievously_wounded)
+			if (owner?.construct)
+				C.visible_message(span_danger("<b>[C]'s wrought skull is <span class='crit'>CLEFT NIGH IN TWAIN</span> by a fearsome blow, crumbling into a <span class='crit'>CLOUD of DUST!</span></b>"))
+				C.death()
+				return
+
+			if (skeletonized)
+				C.visible_message(span_danger("<b>[C]'s bony skull is <span class='crit'>MULCHED</span> by a fearsome blow, spalling into a <span class='crit'>CLOUD of SHARDS!</span></b>"))
+				C.death()
+				return
+			else
+				C.visible_message(span_danger("<B>[C] is <span class='crit'>LYFE-ENDED</span> as their ravaged neck <span class='crit'>BLOSSOMS</span> into petals of <span class='crit'>GORE and BONE!</span></B>"))
+				add_wound(/datum/wound/grievous/pre_decapitation) // this causes a bigass wound, marks the limb as greviously wounded and instantly kills the affected user.
+				return
+		else
+			// we're greviously wounded OR we don't give a shit about two-stage death (guillotines, npcs, etc)
+			C.visible_message(span_danger("<B>[C] is [pick("BRUTALLY","VIOLENTLY","BLOODILY","MESSILY")] DECAPITATED!</B>"))
+	else
+		C.visible_message(span_danger("<B>The [src.name] is [pick("torn off", "sundered", "severed", "separated", "unsewn")]!</B>"))
+	if(!HAS_TRAIT(C, TRAIT_NOPAIN))
+		C.emote("painscream")
+	if(!(NOBLOOD in C.dna?.species?.species_traits))
+		add_mob_blood(C)
+	C.add_stress(/datum/stressevent/dismembered)
+
 	if(stress2give && C.mind) //Shouldn't be freaking out over a boglin getting their shit rocked.
 		for(var/mob/living/carbon/CA in hearers(world.view, C))
 			if(CA != C && !HAS_TRAIT(CA, TRAIT_BLIND) && !guillotine_execution)
@@ -131,7 +153,7 @@
 	owner = C
 	return TRUE
 
-/obj/item/bodypart/chest/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone, damage = 0)
+/obj/item/bodypart/chest/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone, damage = 0, vorpal = FALSE)
 	if(!owner)
 		return FALSE
 	var/mob/living/carbon/C = owner

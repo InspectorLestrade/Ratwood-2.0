@@ -23,6 +23,7 @@
 	same_job_respawn_delay = 0
 	class_setup_examine = FALSE	//Nooo thank you
 	cmode_music = 'sound/music/cmode/towner/combat_towner.ogg'
+	social_rank = SOCIAL_RANK_PEASANT
 	job_subclasses = list(
 		/datum/advclass/barbersurgeon,
 		/datum/advclass/blacksmith,

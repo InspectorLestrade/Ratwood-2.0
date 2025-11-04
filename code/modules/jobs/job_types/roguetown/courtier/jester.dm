@@ -20,6 +20,7 @@
 	min_pq = -4 //silly jesters are funny so low PQ requirement
 	max_pq = null
 	round_contrib_points = 2
+	social_rank = SOCIAL_RANK_NOBLE
 
 /datum/outfit/job/roguetown/jester/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -50,7 +51,7 @@
 	H.STALUC = rand(1, 21)
 	H.cmode_music = 'sound/music/combat_jester.ogg'
 	if(H.mind)
-		// Mime vs Jester. 
+		// Mime vs Jester.
 		// As a mute jester you cannot cast Tell Joke/Tragedy, so why even have them?
 		if(HAS_TRAIT(H, TRAIT_PERMAMUTE)) // I considered adding a check for Xylix patron but in the off chance there's a mute non-xylix jester I don't want to fuck them over.
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/conjure/mime_wall)

@@ -17,7 +17,7 @@
 	max_pq = null
 	round_contrib_points = 2
 	cmode_music = 'sound/music/cmode/towner/combat_towner.ogg'
-	
+	social_rank = SOCIAL_RANK_PEASANT
 	job_traits = list(TRAIT_CICERONE, TRAIT_HOMESTEAD_EXPERT)
 
 	advclass_cat_rolls = list(CTAG_TAPSTER = 2)

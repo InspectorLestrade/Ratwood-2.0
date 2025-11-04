@@ -8,6 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/masterchef
+	subclass_social_rank = SOCIAL_RANK_YEOMAN
 	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
 
 	maximum_possible_slots = 1

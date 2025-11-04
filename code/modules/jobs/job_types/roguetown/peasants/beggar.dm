@@ -19,9 +19,9 @@
 	display_order = JDO_VAGRANT
 	show_in_credits = FALSE
 	can_random = FALSE
-	
+
 	cmode_music = 'sound/music/combat_bum.ogg'
-	
+	social_rank = SOCIAL_RANK_PEASANT
 	/// Chance to become a wise beggar, if we still have space for more wise beggars
 	var/wise_chance = 10
 	/// Amount of wise beggars spawned as of now

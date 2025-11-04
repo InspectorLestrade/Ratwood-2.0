@@ -21,7 +21,7 @@
 	min_pq = -10
 	max_pq = null
 	round_contrib_points = 3
-
+	social_rank = SOCIAL_RANK_PEASANT
 	job_traits = list(TRAIT_SEEDKNOW, TRAIT_NOSTINK, TRAIT_LONGSTRIDER, TRAIT_HOMESTEAD_EXPERT)
 
 	advclass_cat_rolls = list(CTAG_SOILBRIDE = 2)
@@ -59,7 +59,7 @@
 		/datum/skill/labor/butchering = SKILL_LEVEL_MASTER,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 	)
-	
+
 /datum/outfit/job/roguetown/farmer/basic/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/armingcap

@@ -439,7 +439,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	display_order = JDO_MARTYR
-
+	social_rank = SOCIAL_RANK_NOBLE
 	give_bank_account = TRUE
 
 	cmode_music = 'sound/music/combat_martyrsafe.ogg'

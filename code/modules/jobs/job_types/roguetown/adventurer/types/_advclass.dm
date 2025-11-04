@@ -45,6 +45,9 @@
 	/// Spellpoints. If More than 0, Gives Prestidigitation & the Learning Spell.
 	var/subclass_spellpoints = 0
 
+	/// Subclass social rank, used to overwrite the job social rank
+	var/subclass_social_rank
+
 	/// List of items to put in an item stash
 	var/list/subclass_stashed_items = list()
 
@@ -103,6 +106,9 @@
 			H.mind?.special_items[stashed_item] = subclass_stashed_items[stashed_item]
 	if(subclass_spellpoints > 0)
 		H.mind?.adjust_spellpoints(subclass_spellpoints)
+
+	if(subclass_social_rank)
+		H.social_rank = subclass_social_rank
 
 	// After the end of adv class equipping, apply a SPECIAL trait if able
 

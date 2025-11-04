@@ -5,8 +5,9 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/potter
+	subclass_social_rank = SOCIAL_RANK_YEOMAN
 	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
-	
+
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	subclass_stats = list(
 		STATKEY_PER = 2,

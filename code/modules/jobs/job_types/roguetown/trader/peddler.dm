@@ -2,6 +2,7 @@
 	name = "Peddler"
 	tutorial = "You make your coin peddling in spices and performing back-alley 'medical' procedures. Hope your patient didn't need that kidney."
 	outfit = /datum/outfit/job/roguetown/adventurer/peddler
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	class_select_category = CLASS_CAT_TRADER
 	category_tags = list(CTAG_TRADER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
 	traits_applied = list(TRAIT_MEDICINE_EXPERT, TRAIT_ALCHEMY_EXPERT)

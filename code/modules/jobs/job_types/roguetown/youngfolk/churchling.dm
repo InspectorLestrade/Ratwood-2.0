@@ -18,6 +18,8 @@
 	min_pq = -10
 	max_pq = null
 	round_contrib_points = 2
+	social_rank = SOCIAL_RANK_PEASANT
+
 	advclass_cat_rolls = list(CTAG_CHURCHLING = 2)
 	job_subclasses = list(
 		/datum/advclass/churchling

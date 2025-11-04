@@ -23,7 +23,7 @@
 	min_pq = 3
 	max_pq = null
 	round_contrib_points = 2
-
+	social_rank = SOCIAL_RANK_YEOMAN
 	cmode_music = 'sound/music/combat_ManAtArms.ogg'
 	job_subclasses = list(
 		/datum/advclass/manorguard/footsman,
@@ -265,7 +265,7 @@
 		/datum/skill/combat/bows = SKILL_LEVEL_NOVICE,			// We discourage horse archers, though.
 		/datum/skill/combat/slings = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN, 
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
@@ -291,7 +291,7 @@
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				r_hand = /obj/item/rogueweapon/sword/sabre
 				backl = /obj/item/rogueweapon/shield/wood
-		
+
 		backpack_contents = list(
 			/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 			/obj/item/rope/chain = 1,

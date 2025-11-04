@@ -45,18 +45,18 @@
 					else
 						if(H.STASTR >= 13)	//STR adding role w/ Giant or half-orc, seems fair
 							take_damage((max_integrity / 3) * 2 + 1)
-						else 
+						else
 							take_damage(max_integrity / 3 + 1)
 					H.Immobilize(20)
-					//MESSES you up
-					H.apply_damage(200, BRUTE, "chest", H.run_armor_check("chest", "blunt", damage = 200))
+					//hurts you a little bit but doesn't immediately chestfrac  you lmao
+					H.apply_damage(20, BRUTE, "chest", H.run_armor_check("chest", "blunt", damage = 20))
 					audible_message(span_warning("\The [src] shakes under the force of a great impact!"))
 					playsound(src, "meteor", 100, TRUE)
 					addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, Knockdown), 10), 10)
 				else if(is_bigguy && obj_integrity <= max_integrity / 3)	//This charge will wreck it
 					take_damage(max_integrity)
 					H.Immobilize(5)
-					H.apply_damage(80, BRUTE, "chest", H.run_armor_check("chest", "blunt", damage = 80))
+					H.apply_damage(8, BRUTE, "chest", H.run_armor_check("chest", "blunt", damage = 8))
 				else	//Normal charge
 					H.Immobilize(10)
 					H.apply_damage(15, BRUTE, "head", H.run_armor_check("head", "blunt", damage = 15))
@@ -176,9 +176,9 @@
 		if(EXPLODE_HEAVY)
 			hard_cap = min(round(max_integrity * 0.25), 20) //some shit has 50 hps and some shit like doors 1500. I dont want one bomb to nuke 10000 windows around coz its annoying
 		if(EXPLODE_LIGHT)
-			hard_cap = min(round(max_integrity * 0.10), 10) 
+			hard_cap = min(round(max_integrity * 0.10), 10)
 
-	var/total_damage = round(CLAMP(brute_loss + extra_integrity, 0, hard_cap)) 
+	var/total_damage = round(CLAMP(brute_loss + extra_integrity, 0, hard_cap))
 	if(total_damage > 0 && !QDELETED(src))
 		take_damage(total_damage, BRUTE, "blunt", 0)
 

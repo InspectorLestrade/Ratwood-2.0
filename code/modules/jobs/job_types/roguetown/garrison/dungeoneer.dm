@@ -23,7 +23,7 @@
 	min_pq = 0
 	max_pq = null
 	round_contrib_points = 2
-
+	social_rank = SOCIAL_RANK_PEASANT
 	cmode_music = 'sound/music/combat_dungeoneer.ogg'
 	job_subclasses = list(
 		/datum/advclass/dungeoneer

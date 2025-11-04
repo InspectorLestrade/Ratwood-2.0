@@ -22,7 +22,7 @@
 	round_contrib_points = 2
 
 	cmode_music = 'sound/music/combat_knight.ogg'
-
+	social_rank = SOCIAL_RANK_MINOR_NOBLE
 	job_subclasses = list(
 		/datum/advclass/knight/heavy,
 		/datum/advclass/knight/footknight,
@@ -104,7 +104,7 @@
 
 /datum/outfit/job/roguetown/knight/heavy/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()	
+	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	H.verbs |= /mob/proc/haltyell
 
 	H.adjust_blindness(-3)
@@ -185,9 +185,9 @@
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT, 
+		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/shields = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,	
+		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
@@ -218,7 +218,7 @@
 			if("Sabre")
 				beltl = /obj/item/rogueweapon/scabbard/sword
 				l_hand = /obj/item/rogueweapon/sword/sabre
-	
+
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	backl = /obj/item/rogueweapon/shield/tower/metal
@@ -298,7 +298,7 @@
 		var/weapons = list(
 			"Longsword + Crossbow",
 			"Billhook + Recurve Bow",
-			"Grand Mace + Longbow", 
+			"Grand Mace + Longbow",
 			"Sabre + Recurve Bow",
 			"Lance + Kite Shield"
 		)
@@ -381,13 +381,13 @@
 	)
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT, //Swords and knives class.
-		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,	
-		/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT, //Whips can work as a light class weapon.	
-		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,	
-		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,	
+		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT, //Whips can work as a light class weapon.
+		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_EXPERT, //Bows fit a light/speedy class pretty well, gave them ranged options.
 		/datum/skill/combat/bows = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,		
+		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
@@ -398,7 +398,7 @@
 
 
 /datum/outfit/job/roguetown/knight/irregularknight/pre_equip(mob/living/carbon/human/H)
-	..()	
+	..()
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	H.verbs |= /mob/proc/haltyell
 
@@ -421,7 +421,7 @@
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 				beltr = /obj/item/quiver/arrows
 				beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
-			
+
 			if("Sabre + Buckler")
 				beltl = /obj/item/rogueweapon/scabbard/sword
 				r_hand = /obj/item/rogueweapon/sword/sabre
@@ -431,7 +431,7 @@
 				beltl = /obj/item/rogueweapon/whip
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 				beltr = /obj/item/quiver/bolts
-			
+
 			if("Greataxe + Sling")
 				H.adjust_skillrank(/datum/skill/combat/slings, 4, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
@@ -439,7 +439,7 @@
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 				beltr = /obj/item/quiver/sling/iron
 				beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/sling
-		
+
 		switch(armor_choice)
 			if("Light Armor")
 				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
@@ -467,7 +467,7 @@
 			"Slitted Kettle" = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
 			"None"
 		)
-		
+
 		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
 		if(helmchoice != "None")
 			head = helmets[helmchoice]

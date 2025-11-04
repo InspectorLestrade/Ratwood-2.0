@@ -249,6 +249,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/bellsound = FALSE //Sanitycheck for bell jingles
 	var/bell = FALSE //Does item have bell in it, used for attachables
 	var/no_use_cd = FALSE //if true, no cooldown when interacting with it
+	var/vorpal = FALSE // does this item/weapon circumvent two-stage death during dismemberment? (do not add this to anything but ultra rare shit)
 
 /obj/item/Initialize()
 	. = ..()
@@ -472,7 +473,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	Force, combined with armor penetration on an intent determines whether an attack penetrate the target's armor. Armor penetrating attack deals less damage to the armor itself."
 	if(href_list["showforce"])
 		to_chat(usr, span_info("Actual Force: ([force]). [additional_explanation]"))
-	
+
 	if(href_list["showforcewield"])
 		to_chat(usr, span_info("Wielded Force: ([force_wielded]). [additional_explanation]"))
 
@@ -551,7 +552,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 
 		if(associated_skill && associated_skill.name)
 			inspec += "\n<b>SKILL:</b> [associated_skill.name] <span class='info'><a href='?src=[REF(src)];explainskill=1'>{?}</a></span>"
-		
+
 		if(intdamage_factor != 1 && force >= 5)
 			inspec += "\n<b>INTEGRITY DAMAGE:</b> [intdamage_factor * 100]% <span class='info'><a href='?src=[REF(src)];explainintdamage=1'>{?}</a></span>"
 
@@ -1520,7 +1521,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		var/peel_goal = peel_threshold
 		if(divisor > peel_goal)
 			peel_goal = divisor
-			
+
 		var/list/peeledpart = body_parts_covered2organ_names(coveragezone, precise = TRUE)
 
 		if(peel_count < peel_goal)

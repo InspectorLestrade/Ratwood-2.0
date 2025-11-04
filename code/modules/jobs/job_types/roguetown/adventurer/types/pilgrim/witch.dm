@@ -4,6 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/witch
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	traits_applied = list(TRAIT_DEATHSIGHT, TRAIT_WITCH, TRAIT_ARCYNE_T1, TRAIT_ALCHEMY_EXPERT)
 	subclass_stats = list(
@@ -58,7 +59,7 @@
 		H.change_stat(STATKEY_SPD, -1)
 		H.change_stat(STATKEY_INT, 1)
 		H.change_stat(STATKEY_LCK, 1)
-		
+
 	switch(H.patron?.type)
 		if(/datum/patron/inhumen/zizo)
 			H.cmode_music = 'sound/music/combat_heretic.ogg'

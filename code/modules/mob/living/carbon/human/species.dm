@@ -165,7 +165,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/gender_swapping = FALSE
 	var/stress_examine = FALSE
 	var/stress_desc = null
-	
+
 	var/punch_damage
 
 //Used for expanded lore blurbs on species.
@@ -645,7 +645,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				return FALSE
 			return TRUE
 		if(SLOT_BACK)
-			if(H.back)
+			if(H.backr && H.backl)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_BACK) )
 				return FALSE
@@ -1367,9 +1367,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				target.Knockdown(SHOVE_KNOCKDOWN_SOLID)
 				target.visible_message(
 					span_danger("[user.name] shoves [target.name], knocking them down!"),
-					span_danger("You're knocked down from a shove by [user.name]!"), 
-					span_hear("I hear aggressive shuffling followed by a loud thud!"), 
-					COMBAT_MESSAGE_RANGE, 
+					span_danger("You're knocked down from a shove by [user.name]!"),
+					span_hear("I hear aggressive shuffling followed by a loud thud!"),
+					COMBAT_MESSAGE_RANGE,
 					user
 				)
 				to_chat(user, span_danger("I shove [target.name], knocking them down!"))
@@ -1379,9 +1379,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				target.Knockdown(SHOVE_KNOCKDOWN_TABLE)
 				target.visible_message(
 					span_danger("[user.name] shoves [target.name] onto \the [target_table]!"),
-					span_danger("I'm shoved onto \the [target_table] by [user.name]!"), 
-					span_hear("I hear aggressive shuffling followed by a loud thud!"), 
-					COMBAT_MESSAGE_RANGE, 
+					span_danger("I'm shoved onto \the [target_table] by [user.name]!"),
+					span_hear("I hear aggressive shuffling followed by a loud thud!"),
+					COMBAT_MESSAGE_RANGE,
 					user
 				)
 				to_chat(user, span_danger("I shove [target.name] onto \the [target_table]!"))
@@ -1393,9 +1393,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				target_collateral_mob.Knockdown(SHOVE_KNOCKDOWN_COLLATERAL)
 				target.visible_message(
 					span_danger("[user.name] shoves [target.name] into [target_collateral_mob.name]!"),
-					span_danger("I'm shoved into [target_collateral_mob.name] by [user.name]!"), 
+					span_danger("I'm shoved into [target_collateral_mob.name] by [user.name]!"),
 					span_hear("I hear aggressive shuffling followed by a loud thud!"),
-					COMBAT_MESSAGE_RANGE, 
+					COMBAT_MESSAGE_RANGE,
 					user
 				)
 				to_chat(user, span_danger("I shove [target.name] into [target_collateral_mob.name]!"))
@@ -1404,9 +1404,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		else
 			target.visible_message(
 				span_danger("[user.name] shoves [target.name]!"),
-				span_danger("I'm shoved by [user.name]!"), 
-				span_hear("I hear aggressive shuffling!"), 
-				COMBAT_MESSAGE_RANGE, 
+				span_danger("I'm shoved by [user.name]!"),
+				span_hear("I hear aggressive shuffling!"),
+				COMBAT_MESSAGE_RANGE,
 				user
 			)
 			to_chat(user, span_danger("I shove [target.name]!"))
@@ -1430,8 +1430,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				knocked_item = TRUE
 				target.visible_message(
 					span_danger("[target.name] drops \the [target_held_item]!"),
-					span_warning("I drop \the [target_held_item]!"), 
-					null, 
+					span_warning("I drop \the [target_held_item]!"),
+					null,
 					COMBAT_MESSAGE_RANGE
 				)
 
@@ -1492,7 +1492,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(!stander)
 			target.lastattacker = user.real_name
 			target.lastattackerckey = user.ckey
-			target.lastattacker_weakref = WEAKREF(user)	
+			target.lastattacker_weakref = WEAKREF(user)
 			if(target.mind)
 				target.mind.attackedme[user.real_name] = world.time
 			var/selzone = accuracy_check(user.zone_selected, user, target, /datum/skill/combat/unarmed, user.used_intent)
@@ -1764,7 +1764,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		used_intfactor = lowest_intfactor
 	if(higher_intfactor > 1)	//Make sure to keep your weapon and intent intfactors consistent to avoid problems here!
 		used_intfactor = higher_intfactor
-	
+
 	if(ishuman(user) && user.mind && user.used_intent.blade_class != BCLASS_PEEL)
 		var/text = "[bodyzone2readablezone(selzone)]..."
 		if(HAS_TRAIT(user, TRAIT_DECEIVING_MEEKNESS))
@@ -1823,7 +1823,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	//dismemberment
 	var/bloody = 0
 	var/probability = I.get_dismemberment_chance(affecting, user, selzone)
-	if(affecting.brute_dam && prob(probability) && affecting.dismember(I.damtype, user.used_intent?.blade_class, user, selzone))
+	if(affecting.brute_dam && prob(probability) && affecting.dismember(I.damtype, user.used_intent?.blade_class, user, selzone, vorpal = I.vorpal))
 		bloody = 1
 		I.add_mob_blood(H)
 		user.update_inv_hands()

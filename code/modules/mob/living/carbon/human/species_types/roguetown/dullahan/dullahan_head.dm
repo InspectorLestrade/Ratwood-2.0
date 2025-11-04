@@ -93,7 +93,7 @@
 // Remove head.
 /datum/species/dullahan/help(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 	// Only do it if the precise selection is the head, to avoid mistakes.
-	if(target != user || user.zone_selected != BODY_ZONE_HEAD) 
+	if(target != user || user.zone_selected != BODY_ZONE_HEAD)
 		return ..()
 
 	if(headless)
@@ -297,7 +297,7 @@
 			var/mutable_appearance/mask_overlay = wear_mask.build_worn_icon(default_layer = MASK_LAYER, default_icon_file = 'icons/mob/clothing/mask.dmi')
 			. += mask_overlay
 
-/obj/item/bodypart/head/dullahan/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone, damage = 0)
+/obj/item/bodypart/head/dullahan/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone, damage = 0, vorpal = FALSE)
 	if(!owner)
 		return FALSE
 	var/mob/living/carbon/C = owner

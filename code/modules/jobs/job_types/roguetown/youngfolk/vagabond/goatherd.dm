@@ -6,6 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/vagabond/goatherd
 	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
 	category_tags = list(CTAG_VAGABOND)
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/goatmale/tame
 	subclass_stats = list(
 		STATKEY_WIL = 2,
@@ -35,7 +36,7 @@
 	if(prob(33))
 		cloak = /obj/item/clothing/cloak/raincloak/brown
 		gloves = /obj/item/clothing/gloves/roguetown/fingerless
-	
+
 	if(prob(10))
 		r_hand = /obj/item/rogue/instrument/flute
 

@@ -11,14 +11,14 @@
 	allowed_races = ACCEPTED_RACES
 	allowed_ages = ALL_AGES_LIST
 	cmode_music = 'sound/music/cmode/towner/combat_towner3.ogg'
-	
+
 	outfit = /datum/outfit/job/roguetown/archivist
 	display_order = JDO_ARCHIVIST
 	give_bank_account = 15
 	min_pq = 1 // Please do not read smut while brewing bottle bombs. It upsets the maids when they have to scrape archivists off the ceiling.
 	max_pq = null
 	round_contrib_points = 3
-
+	social_rank = SOCIAL_RANK_YEOMAN
 	job_traits = list(
 		TRAIT_ARCYNE_T2,
 		TRAIT_MAGEARMOR,

@@ -34,7 +34,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	min_pq = 5 // You should know the basics of things if you're going to lead the town's entire religious sector
 	max_pq = null
 	round_contrib_points = 5
-
+	social_rank = SOCIAL_RANK_ROYAL
 	//No nobility for you, being a member of the clergy means you gave UP your nobility. It says this in many of the church tutorial texts.
 	virtue_restrictions = list(/datum/virtue/utility/noble)
 	job_traits = list(TRAIT_CHOSEN, TRAIT_RITUALIST, TRAIT_GRAVEROBBER,TRAIT_RESONANCE, TRAIT_VOTARY, TRAIT_HOMESTEAD_EXPERT)

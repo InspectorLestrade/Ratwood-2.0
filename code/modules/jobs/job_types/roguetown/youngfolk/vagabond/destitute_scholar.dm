@@ -4,6 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/vagabond/scholar
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	category_tags = list(CTAG_VAGABOND)
 	traits_applied = list(TRAIT_INTELLECTUAL, TRAIT_CICERONE, TRAIT_SEEDKNOW)
 	subclass_stats = list(
@@ -35,6 +36,6 @@
 	if(prob(33))
 		cloak = /obj/item/clothing/cloak/raincloak/brown
 		gloves = /obj/item/clothing/gloves/roguetown/fingerless
-	
+
 	if(prob(10))
 		r_hand = /obj/item/rogue/instrument/flute

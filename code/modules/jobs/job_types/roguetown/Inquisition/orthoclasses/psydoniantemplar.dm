@@ -7,6 +7,7 @@
 	category_tags = list(CTAG_INQUISITION)
 	subclass_languages = list(/datum/language/otavan)
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
+	subclass_social_rank = SOCIAL_RANK_MINOR_NOBLE
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	subclass_stats = list(
 		STATKEY_WIL = 3,

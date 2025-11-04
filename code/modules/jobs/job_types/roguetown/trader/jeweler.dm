@@ -7,6 +7,7 @@
 	class_select_category = CLASS_CAT_TRADER
 	traits_applied = list(TRAIT_TRAINED_SMITH, TRAIT_SMITHING_EXPERT)
 	outfit = /datum/outfit/job/roguetown/adventurer/trader
+	subclass_social_rank = SOCIAL_RANK_YEOMAN
 	subclass_stats = list(
 		STATKEY_INT = 3,
 		STATKEY_PER = 1,

@@ -168,7 +168,8 @@
 	///Whether this class can be clicked on for details.
 	var/class_setup_examine = TRUE
 
-
+	///The social rank of the job, determines the examine text when examining others or being examined
+	var/social_rank = SOCIAL_RANK_DIRT
 
 /datum/job/proc/special_job_check(mob/dead/new_player/player)
 	return TRUE
@@ -258,6 +259,9 @@
 
 	if(cmode_music)
 		H.cmode_music = cmode_music
+
+	if(social_rank)
+		H.social_rank = social_rank
 
 	if (!hidden_job)
 		var/mob/living/carbon/human/Hu = H

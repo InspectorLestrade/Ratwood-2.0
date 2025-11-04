@@ -5,6 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/sfighter
 	cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_MEDIUMARMOR)
 	class_select_category = CLASS_CAT_WARRIOR
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
@@ -530,7 +531,7 @@
 		H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE) 	
+		H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/staves, 1, TRUE)
 	//Old people get the option to become glass cannons. Expert Knives + Expert in their chosen weapon, but a permenant -I STR, -I PER, -2 SPD and -2 CON debuff.

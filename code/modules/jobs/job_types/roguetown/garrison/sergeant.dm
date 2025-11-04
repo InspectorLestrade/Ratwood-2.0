@@ -13,7 +13,7 @@
 	display_order = JDO_SERGEANT
 	whitelist_req = TRUE
 	round_contrib_points = 3
-	
+	social_rank = SOCIAL_RANK_YEOMAN
 
 	outfit = /datum/outfit/job/roguetown/sergeant
 	advclass_cat_rolls = list(CTAG_SERGEANT = 20)
@@ -81,7 +81,7 @@
 		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/bows = SKILL_LEVEL_JOURNEYMAN,	
+		/datum/skill/combat/bows = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
@@ -175,7 +175,7 @@
 			if(!(target.job in list("Knight", "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			revert_cast()
@@ -241,7 +241,7 @@
 			if(!(target.job in list("Knight", "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			revert_cast()
@@ -276,7 +276,7 @@
 			if(!(target.job in list("Knight", "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			revert_cast()
@@ -338,7 +338,7 @@
 			if(!(target.job in list("Knight", "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			revert_cast()
@@ -386,7 +386,7 @@
 			return
 		if(HAS_TRAIT(target, TRAIT_CRITICAL_WEAKNESS))
 			to_chat(user, span_alert("They are already vulnerable!"))
-			return	
+			return
 		user.say("[msg]")
 		target.apply_status_effect(/datum/status_effect/debuff/order/focustarget)
 		return TRUE

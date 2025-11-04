@@ -8,7 +8,7 @@
 	total_positions = 4
 	spawn_positions = 4
 	advclass_cat_rolls = list(CTAG_GUILDSMEN = 20)
-
+	social_rank = SOCIAL_RANK_YEOMAN
 	allowed_races = ACCEPTED_RACES
 
 	tutorial = "You are a member of the Rotwood Vale Guild of Crafts, a massive guild formed to represent the interests of all craftsmen in the township of Rotwood Vale.\
@@ -123,7 +123,7 @@
 		/datum/skill/craft/masonry = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/engineering = SKILL_LEVEL_MASTER, //raising so they don't need to early week grind to get items out, in parity to a smith's armor or weapon skill
 		/datum/skill/craft/blacksmithing = SKILL_LEVEL_APPRENTICE, // Artificer makes for a crappy substitute blacksmith but have the same spread
-		/datum/skill/craft/armorsmithing = SKILL_LEVEL_APPRENTICE, 
+		/datum/skill/craft/armorsmithing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/weaponsmithing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
@@ -185,7 +185,7 @@
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/lumberjacking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/labor/mining = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT, 
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/crafting = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/carpentry = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/masonry = SKILL_LEVEL_EXPERT,
@@ -225,5 +225,5 @@
 						/obj/item/recipe_book/survival = 1,
 						/obj/item/roguekey/crafterguild = 1
 						)
-	ADD_TRAIT(H, TRAIT_MASTER_CARPENTER, TRAIT_GENERIC)		
-	ADD_TRAIT(H, TRAIT_MASTER_MASON, TRAIT_GENERIC)		
+	ADD_TRAIT(H, TRAIT_MASTER_CARPENTER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MASTER_MASON, TRAIT_GENERIC)

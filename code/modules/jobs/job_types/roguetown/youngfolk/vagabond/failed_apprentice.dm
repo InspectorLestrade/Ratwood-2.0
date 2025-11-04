@@ -6,6 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/vagabond/mage
 	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T3, TRAIT_ALCHEMY_EXPERT)
 	category_tags = list(CTAG_VAGABOND)
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_CON = -2,
@@ -35,5 +36,5 @@
 	if(prob(33))
 		cloak = /obj/item/clothing/cloak/raincloak/brown
 		gloves = /obj/item/clothing/gloves/roguetown/fingerless
-	
+
 	r_hand = /obj/item/rogueweapon/woodstaff

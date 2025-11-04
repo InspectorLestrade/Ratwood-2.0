@@ -83,7 +83,7 @@
 
 // A weaker strike for sword with high damage so that it don't end up becoming better than mace
 /datum/intent/sword/strike/bad
-	damfactor = 0.7 
+	damfactor = 0.7
 
 /datum/intent/sword/peel
 	name = "armor peel"
@@ -726,6 +726,7 @@
 	max_integrity = 200//+50
 	force = 23//Typical +3, for a Templar weapon.
 	force_wielded = 33//As above.
+	vorpal = TRUE // snicker snack this shit cuts heads off effortlessly (DO NOT PUT THIS ON ANYTHING ELSE UNLESS IT'S SUPER FUCKING RARE!!!)
 
 /obj/item/rogueweapon/sword/long/exe/getonmobprop(tag)
 	. = ..()
@@ -742,6 +743,7 @@
 	icon_state = "terminusest"
 	name = "\"Terminus Est\""
 	desc = "An ancient and damaged executioner's sword, decorated with a bronze pommel and crossguard. A bloody rag winds around the ricasso, ever-present to keep the blade clean."
+	vorpal = TRUE // snicker snack this shit cuts heads off effortlessly (DO NOT PUT THIS ON ANYTHING ELSE UNLESS IT'S SUPER FUCKING RARE!!!)
 
 /obj/item/rogueweapon/sword/long/exe/cloth/rmb_self(mob/user)
 	user.changeNext_move(CLICK_CD_MELEE)
@@ -1008,7 +1010,7 @@
 /obj/item/rogueweapon/sword/short/silver
 	name = "silver shortsword"
 	desc = "A shortsword with a blade of pure silver. In the marginalia of tomes depicting Psydonia's crusading orders, there is no sight more iconic than that of the hauberk-draped paladin; a kite shield in one hand, and this glimmering sidearm in the other."
-	icon = 'icons/roguetown/weapons/daggers32.dmi'	
+	icon = 'icons/roguetown/weapons/daggers32.dmi'
 	icon_state = "silverswordshort"
 	sheathe_icon = "psyswordshort"
 	force = 20

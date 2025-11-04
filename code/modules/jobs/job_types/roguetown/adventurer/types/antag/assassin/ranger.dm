@@ -5,6 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/assassin/ranger
 	category_tags = list(CTAG_ASSASSIN)
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_WOODWALKER, TRAIT_OUTDOORSMAN)	// Master of the Forest - Tosses them a bone for wilderness chases.
 	// Weighted 14
 	subclass_stats = list(
@@ -49,7 +50,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
 					/obj/item/flashlight/flare/torch/lantern/prelit = 1,
-					/obj/item/rogueweapon/scabbard/sheath = 1, 
+					/obj/item/rogueweapon/scabbard/sheath = 1,
 					/obj/item/rogueweapon/huntingknife/idagger/steel = 1,
 					/obj/item/needle/thorn = 1,
 					/obj/item/natural/cloth = 1,

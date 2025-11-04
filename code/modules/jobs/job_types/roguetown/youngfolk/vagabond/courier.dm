@@ -5,6 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/vagabond/courier
 	category_tags = list(CTAG_VAGABOND)
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	subclass_stats = list(
 		STATKEY_PER = 2,
 		STATKEY_SPD = 2,
@@ -31,6 +32,6 @@
 	if(prob(33))
 		cloak = /obj/item/clothing/cloak/raincloak/brown
 		gloves = /obj/item/clothing/gloves/roguetown/fingerless
-	
+
 	if(prob(10))
 		r_hand = /obj/item/rogue/instrument/flute

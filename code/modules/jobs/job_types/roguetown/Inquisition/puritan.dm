@@ -20,6 +20,7 @@
 	min_pq = 10
 	max_pq = null
 	round_contrib_points = 2
+	social_rank = SOCIAL_RANK_NOBLE
 	job_subclasses = list(
 		/datum/advclass/puritan/inspector,
 		/datum/advclass/puritan/ordinator

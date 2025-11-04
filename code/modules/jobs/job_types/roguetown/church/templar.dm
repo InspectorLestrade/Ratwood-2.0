@@ -16,7 +16,7 @@
 	spawn_positions = 3
 	advclass_cat_rolls = list(CTAG_TEMPLAR = 20)
 	display_order = JDO_TEMPLAR
-
+	social_rank = SOCIAL_RANK_MINOR_NOBLE
 	give_bank_account = TRUE
 	job_traits = list(TRAIT_RITUALIST, TRAIT_STEELHEARTED)
 
@@ -220,13 +220,13 @@
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/plate/half, SLOT_ARMOR, TRUE) //Cuirass, not halfplate. Slightly reduced starting armor.
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/sword/short(H), TRUE)
-			H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE) //Expert Crossbow, but Journeyman Swords and Apprentice-level combat skills elsewhere. 
+			H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE) //Expert Crossbow, but Journeyman Swords and Apprentice-level combat skills elsewhere.
 			H.adjust_skillrank(/datum/skill/combat/maces, -1, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/axes, -1, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/whipsflails, -1, TRUE)
 		if("Decablade")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/undivided(H), TRUE)
-			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)	
+			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/plate, SLOT_ARMOR, TRUE)
 		if("Solar Judgement")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/exe/astrata(H), TRUE)
@@ -270,7 +270,7 @@
 			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/battle/abyssoraxe(H), TRUE)
 			H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/plate, SLOT_ARMOR, TRUE)
-			
+
 	// -- Start of section for god specific bonuses --
 	if(H.patron?.type == /datum/patron/divine/astrata)
 		H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)

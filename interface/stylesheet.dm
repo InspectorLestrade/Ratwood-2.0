@@ -150,6 +150,7 @@ h1.alert, h2.alert	{color: #c9c1ba;font-family: Pterra, TrueType;}
 .gronnic				{font-family: "Jorvik Informal", "Pterra"; font-size: 100%;}
 .aavnic					{font-family: "Romeodn", "Pterra"; font-size: 100%;}
 .felid					{font-family: "Rasyideen", Pterra; font-size: 120%;}
+.abyssal				{font-family: "Achilles", "Pterra"; font-size: 110%;}
 
 .torture				{color: #42ff20}
 

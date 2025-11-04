@@ -2,6 +2,7 @@
 	name = "Psyaltrist"
 	tutorial = "You spent some time with cathedral choirs and psyaltrists. Now you spend your days applying the musical arts to the practical on behalf of His most Holy of Inquisitions."
 	outfit = /datum/outfit/job/roguetown/psyaltrist
+	subclass_social_rank = SOCIAL_RANK_PEASANT
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_EMPATH)
 	category_tags = list(CTAG_INQUISITION)
 	subclass_languages = list(/datum/language/otavan)
@@ -25,7 +26,7 @@
 	subclass_stashed_items = list(
 		"Of Psydon" = /obj/item/book/rogue/bibble/psy
 	)
-	
+
 /datum/outfit/job/roguetown/psyaltrist/pre_equip(mob/living/carbon/human/H)
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/psyaltrist
 	backl = /obj/item/storage/backpack/rogue/satchel/otavan

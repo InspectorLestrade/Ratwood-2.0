@@ -373,7 +373,7 @@
 	req_blade = /obj/item/blade/iron_plate
 	created_item = /obj/item/clothing/wrists/roguetown/bracers/iron
 	createditem_num = 1
-	
+
 /datum/anvil_recipe/armor/iron/jackchain
 	name = "Jack Chain, Iron"
 	req_bar = /obj/item/ingot/iron
@@ -445,7 +445,7 @@
 	req_bar = /obj/item/ingot/iron
 	req_blade = /obj/item/blade/iron_plate
 	created_item = /obj/item/clothing/head/roguetown/helmet/horned
-	
+
 
 // STEEL
 
@@ -613,10 +613,10 @@
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/half
 
 /datum/anvil_recipe/armor/steel/lightcuirass
-	name = "Fencing Cuirass, Steel (+1 Steel, +2 Fur, +1 Tallow, +3 Cured Leather)"
+	name = "Fencing Cuirass, Steel (+1 Steel, +1 Fencing Jacket)" //needs cooperation with a tailor to make
 	req_bar = /obj/item/ingot/steel
 	req_blade = /obj/item/blade/steel_plate
-	additional_items = list(/obj/item/ingot/steel, /obj/item/natural/fur, /obj/item/natural/fur, /obj/item/reagent_containers/food/snacks/tallow, /obj/item/natural/hide/cured, /obj/item/natural/hide/cured, /obj/item/natural/hide/cured)
+	additional_items = list(/obj/item/ingot/steel, /obj/item/clothing/suit/roguetown/armor/leather/heavy/freifechter)
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/half/fencer
 
 /datum/anvil_recipe/armor/steel/cuirass/fluted

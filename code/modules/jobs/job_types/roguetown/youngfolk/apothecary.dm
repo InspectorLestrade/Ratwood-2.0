@@ -21,7 +21,7 @@
 	min_pq = 0
 	max_pq = null
 	round_contrib_points = 5
-
+	social_rank = SOCIAL_RANK_YEOMAN
 	advclass_cat_rolls = list(CTAG_APOTH = 2)
 	job_traits = list(TRAIT_MEDICINE_EXPERT, TRAIT_ALCHEMY_EXPERT, TRAIT_NOSTINK, TRAIT_EMPATH)
 	job_subclasses = list(
@@ -41,7 +41,7 @@
 	)
 	subclass_skills = list(
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE, //enhances survival chances. 
+		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE, //enhances survival chances.
 		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_NOVICE,

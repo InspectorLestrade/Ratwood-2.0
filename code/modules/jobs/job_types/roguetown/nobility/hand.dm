@@ -19,6 +19,7 @@
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/cmode/nobility/combat_spymaster.ogg'
+	social_rank = SOCIAL_RANK_NOBLE
 	job_traits = list(TRAIT_NOBLE)
 	job_subclasses = list(
 		/datum/advclass/hand/blademaster,
@@ -132,7 +133,7 @@
 		/datum/skill/misc/lockpicking = SKILL_LEVEL_MASTER, // not like they're gonna break into the vault.
 	)
 
-//Spymaster start. More similar to the rogue adventurer - loses heavy armor and sword skills for more sneaky stuff. 
+//Spymaster start. More similar to the rogue adventurer - loses heavy armor and sword skills for more sneaky stuff.
 /datum/outfit/job/roguetown/hand/spymaster/pre_equip(mob/living/carbon/human/H)
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/dtace = 1,
@@ -169,7 +170,7 @@
 		STATKEY_INT = 4,
 		STATKEY_PER = 3,
 		STATKEY_WIL = 2,
-		STATKEY_LCK = 2,		
+		STATKEY_LCK = 2,
 	)
 	subclass_spellpoints = 15
 	subclass_skills = list(
@@ -190,7 +191,7 @@
 		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
 	)
 
-//Advisor start. Trades combat skills for more knowledge and skills - for older hands, hands that don't do combat - people who wanna play wizened old advisors. 
+//Advisor start. Trades combat skills for more knowledge and skills - for older hands, hands that don't do combat - people who wanna play wizened old advisors.
 /datum/outfit/job/roguetown/hand/advisor/pre_equip(mob/living/carbon/human/H)
 	r_hand = /obj/item/rogueweapon/sword/rapier/dec
 	beltr = /obj/item/rogueweapon/scabbard/sword

@@ -98,6 +98,11 @@
 	/// Whether the bodypart has unlimited bleeding.
 	var/unlimited_bleeding = FALSE
 
+	/// Is the limb flagged for two-stage death handling? (aka, decaps will instantly kill first, THEN remove the head on second apply)
+	var/two_stage_death = FALSE
+	/// Has the limb been marked as having suffered a two-stage death flag?
+	var/grievously_wounded = FALSE
+
 	grid_width = 32
 	grid_height = 64
 

@@ -19,6 +19,7 @@
 	job_traits = list(TRAIT_STEELHEARTED,TRAIT_OUTLANDER)
 	always_show_on_latechoices = TRUE
 	class_categories = TRUE
+	social_rank = SOCIAL_RANK_PEASANT
 	job_subclasses = list(
 		/datum/advclass/mercenary/anthrax,
 		/datum/advclass/mercenary/atgervi,
