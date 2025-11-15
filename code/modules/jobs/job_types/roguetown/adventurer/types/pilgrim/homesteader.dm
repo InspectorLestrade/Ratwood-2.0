@@ -144,31 +144,31 @@
 
 
 	// STAT PACK SELECTION
-	var/stat_packs = list("Agile", "Bookworm", "Toned", "All-Rounded")
+	var/stat_packs = list("Agile - SPD +2, CON +1, STR -2, WIL -2", "Bookworm - INT +1, PER +1, WIL +1, STR -2, CON -2", "Toned - STR +1, CON +1, WIL +1, INT -1, SPD -1", "All-Rounded - No Changes")
 	var/stat_choice = input(H, "Select your stat focus. [1/1]", "Stat Pack Selection") as anything in stat_packs
 
 	switch(stat_choice)
-		if("Agile")
+		if("Agile - SPD +2, CON +1, STR -2, WIL -2")
 			to_chat(H, span_notice("You are agile and nimble."))
 			H.change_stat(STATKEY_SPD, 2)
 			H.change_stat(STATKEY_WIL, -2)
 			H.change_stat(STATKEY_STR, -2) 
 			H.change_stat(STATKEY_CON, 1)
-		if("Bookworm")
+		if("Bookworm - INT +1, PER +1, WIL +1, STR -2, CON -2")
 			to_chat(H, span_notice("You are learned and wise."))
 			H.change_stat(STATKEY_INT, 1)
 			H.change_stat(STATKEY_PER, 1)
 			H.change_stat(STATKEY_WIL, 1)
 			H.change_stat(STATKEY_STR, -2)
 			H.change_stat(STATKEY_CON, -2)
-		if("Toned")
+		if("Toned - STR +1, CON +1, WIL +1, INT -1, SPD -1")
 			to_chat(H, span_notice("You are strong and hardy."))
 			H.change_stat(STATKEY_STR, 1)
 			H.change_stat(STATKEY_CON, 1)
 			H.change_stat(STATKEY_WIL, 1)
 			H.change_stat(STATKEY_INT, -1)
 			H.change_stat(STATKEY_SPD, -1)
-		if("All-Rounded")
+		if("All-Rounded - No Changes")
 			to_chat(H, span_notice("You are balanced in all aspects."))
 			// No stat changes for all-rounded
 
