@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/mage
 	class_select_category = CLASS_CAT_MAGE
-	subclass_social_rank = SOCIAL_RANK_PEASANT
+	subclass_social_rank = SOCIAL_RANK_YEOMAN
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T3, TRAIT_ALCHEMY_EXPERT)
 	subclass_stats = list(
