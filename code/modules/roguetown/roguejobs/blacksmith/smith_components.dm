@@ -256,6 +256,9 @@
 					I.polished = 4
 					I.AddComponent(/datum/component/metal_glint)
 
+		if(modifier < 1)
+			I.max_integrity *= modifier
+
 		I.sellprice *= modifier
 		if(istype(I, /obj/item/lockpick))
 			var/obj/item/lockpick/L = I
