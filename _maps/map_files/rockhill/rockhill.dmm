@@ -6,7 +6,7 @@
 "aab" = (
 /obj/item/restraints/legcuffs/beartrap/armed,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "aac" = (
 /obj/structure/fermentation_keg,
 /turf/open/floor/rogue/cobble,
@@ -399,7 +399,9 @@
 "agp" = (
 /obj/structure/arcyne_wall,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "agA" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 4
@@ -581,7 +583,9 @@
 "akP" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/volcanic,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "akW" = (
 /turf/closed/wall/mineral/rogue/roofwall/outercorner/dir4,
 /area/rogue/indoors/inq)
@@ -688,7 +692,9 @@
 /area/rogue/outdoors/bograt/above)
 "amL" = (
 /turf/closed/wall/mineral/rogue/decowood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "amU" = (
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bograt/south)
@@ -1301,7 +1307,9 @@
 /area/rogue/indoors/town/church)
 "avY" = (
 /turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "awa" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -1350,7 +1358,9 @@
 /area/rogue/indoors)
 "awR" = (
 /turf/open/floor/rogue/volcanic,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "awV" = (
 /obj/structure/flora/rogueshroom{
 	pixel_y = -5
@@ -1364,7 +1374,9 @@
 /turf/open/floor/rogue/greenstone/runed{
 	dir = 1
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "axa" = (
 /obj/item/reagent_containers/glass/cup/wooden,
 /obj/item/reagent_containers/glass/cup/wooden,
@@ -1735,7 +1747,7 @@
 /obj/item/rogueweapon/mace/wsword,
 /obj/item/rogueweapon/mace/wsword,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "aCz" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/rooftop/green,
@@ -2458,7 +2470,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "aOZ" = (
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/rogue/dirt/road,
@@ -3141,7 +3155,9 @@
 	pixel_x = 4
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "aZz" = (
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/tavern)
@@ -3498,7 +3514,9 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bfN" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/clothing/under/roguetown/tights/black,
@@ -3978,7 +3996,9 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bmQ" = (
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_x = 6
@@ -4596,7 +4616,9 @@
 "bxL" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bxR" = (
 /obj/structure/table/vtable,
 /obj/item/reagent_containers/lux,
@@ -4976,7 +4998,9 @@
 "bEA" = (
 /obj/structure/arcyne_wall,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bEO" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
 /turf/open/floor/rogue/cobble/mossy,
@@ -5895,7 +5919,9 @@
 /obj/item/paper/scroll,
 /obj/item/natural/feather,
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bSL" = (
 /obj/structure/roguewindow/harem3{
 	opacity = 1
@@ -5917,7 +5943,9 @@
 /obj/item/ash,
 /obj/item/ash,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bSW" = (
 /obj/structure/closet/crate/chest/crate,
 /obj/structure/fluff/railing/wood/west{
@@ -6264,7 +6292,9 @@
 "bXq" = (
 /obj/machinery/gear_painter,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bXv" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -6329,7 +6359,9 @@
 "bYO" = (
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "bYP" = (
 /obj/structure/stairs{
 	dir = 8
@@ -6393,7 +6425,9 @@
 "cas" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "caA" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/naturalstone,
@@ -6486,7 +6520,9 @@
 "cbU" = (
 /obj/structure/roguemachine/scomm/l,
 /turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ccf" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -6575,7 +6611,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cdS" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -6845,7 +6883,9 @@
 /area/rogue/indoors)
 "cip" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cix" = (
 /obj/item/natural/stone,
 /turf/open/floor/rogue/dirt/road,
@@ -7435,6 +7475,12 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
+"csm" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/town/basement)
 "csn" = (
 /obj/structure/flora/rogueshroom,
 /turf/open/floor/rogue/naturalstone,
@@ -7817,7 +7863,9 @@
 /obj/item/roguecoin/silver/pile,
 /obj/item/roguecoin/copper/pile,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cyV" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
@@ -7946,7 +7994,9 @@
 /area/rogue/indoors/town/manor/rockhill)
 "cBa" = (
 /turf/open/floor/rogue/underworld/road,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cBc" = (
 /turf/open/floor/rogue/rooftop/green/corner1/direight,
 /area/rogue/outdoors/town/roofs)
@@ -8003,7 +8053,9 @@
 	pixel_y = -32
 	},
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cBV" = (
 /obj/structure/table/wood{
 	dir = 9;
@@ -8286,7 +8338,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "cFD" = (
 /obj/structure/closet/crate/chest{
 	lockid = "church"
@@ -8463,7 +8515,9 @@
 /obj/structure/bookcase/random,
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cHD" = (
 /obj/structure/stairs{
 	dir = 1
@@ -8522,7 +8576,9 @@
 "cIx" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cIK" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/fluff/railing/wood{
@@ -8997,7 +9053,9 @@
 "cOX" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cPj" = (
 /obj/structure/fluff/railing/border/north,
 /turf/open/floor/rogue/cobblerock,
@@ -9126,7 +9184,9 @@
 	pixel_y = 1
 	},
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "cQz" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobblerock,
@@ -10487,7 +10547,9 @@
 /area/rogue/indoors/town/manor/rockhill)
 "dmS" = (
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "dmX" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/dirt/road,
@@ -10539,6 +10601,12 @@
 /obj/item/book/rogue/law,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
+"dnR" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
 "dnV" = (
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/mountains/decap{
@@ -10630,7 +10698,9 @@
 	pixel_x = -4
 	},
 /turf/open/floor/carpet/inn,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "dpp" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -10736,7 +10806,9 @@
 	dir = 10
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "dqu" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/roguegrass/herb/salvia,
@@ -11072,7 +11144,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "dwj" = (
 /obj/item/natural/cloth,
 /obj/structure/closet/crate/drawer{
@@ -12136,7 +12210,9 @@
 	pixel_x = 0
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "dNt" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10
@@ -12583,7 +12659,9 @@
 "dUY" = (
 /obj/structure/fluff/walldeco/mageguild,
 /turf/closed/wall/mineral/rogue/wooddark,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "dUZ" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/rock,
 /obj/effect/decal/cleanable/dirt/cobweb{
@@ -12631,7 +12709,7 @@
 	lockid = "farm"
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "dVH" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/suit/roguetown/armor/leather/goblin,
@@ -13435,7 +13513,9 @@
 	lockid = "tower"
 	},
 /turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ehq" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -13557,15 +13637,15 @@
 	},
 /turf/open/floor/rogue/metal,
 /area/rogue/under/cavewet)
+"eiG" = (
+/obj/structure/chair/smallbench,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bograt/north)
 "eiM" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 9
 	},
 /area/rogue/outdoors/bograt/above)
-"eiP" = (
-/obj/structure/chair/smallbench,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/rtfield/rockhill)
 "eiZ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -13587,7 +13667,9 @@
 "ejk" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ejl" = (
 /obj/structure/fluff/clock,
 /turf/open/floor/rogue/concrete,
@@ -13753,7 +13835,9 @@
 /area/rogue/indoors/town)
 "emy" = (
 /turf/closed/wall/mineral/rogue/decostone/cand,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "emz" = (
 /obj/structure/table/wood{
 	icon_state = "map4"
@@ -13782,7 +13866,9 @@
 "emL" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/grasscold,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "emP" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -14122,7 +14208,9 @@
 "esx" = (
 /obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "esK" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 1
@@ -14924,7 +15012,7 @@
 "eGb" = (
 /obj/item/rogueweapon/mace/woodclub,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "eGj" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/transparent/openspace,
@@ -15080,7 +15168,9 @@
 	dir = 9
 	},
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "eIx" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/grass,
@@ -15228,7 +15318,9 @@
 	color = "#415e96"
 	},
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "eKK" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 4;
@@ -16384,7 +16476,7 @@
 	},
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "feh" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 1
@@ -16726,7 +16818,9 @@
 	},
 /obj/structure/fluff/wallclock,
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fja" = (
 /obj/structure/fluff/walldeco/chains,
 /turf/open/floor/rogue/concrete,
@@ -16745,7 +16839,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fjr" = (
 /obj/structure/fermentation_keg,
 /turf/open/floor/rogue/blocks,
@@ -16836,7 +16932,9 @@
 /area/rogue/outdoors/beach/harbor)
 "fkC" = (
 /turf/closed/wall/mineral/rogue/stone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fkR" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -17147,7 +17245,9 @@
 /obj/structure/table/wood/poor,
 /obj/item/book/rogue/noc,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "frk" = (
 /obj/structure/stairs{
 	dir = 8
@@ -17460,7 +17560,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fwo" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cave/rhgoblinencampment)
@@ -18208,7 +18310,9 @@
 "fHk" = (
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fHm" = (
 /obj/structure/bed/rogue/inn{
 	pixel_y = 11
@@ -18365,7 +18469,9 @@
 	pixel_x = 8
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fIY" = (
 /turf/open/floor/rogue/rooftop/green{
 	dir = 8
@@ -18448,7 +18554,9 @@
 "fKm" = (
 /obj/machinery/light/rogue/cauldron,
 /turf/open/floor/rogue/volcanic,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fKC" = (
 /obj/structure/chair/bench/couchablack/r,
 /turf/open/floor/carpet/royalblack,
@@ -18606,7 +18714,7 @@
 /obj/item/natural/cloth,
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "fMn" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
@@ -19056,7 +19164,7 @@
 /obj/structure/stairs/stone,
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "fRQ" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -19494,7 +19602,9 @@
 	},
 /obj/structure/chair/bench/couch/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "fYb" = (
 /obj/structure/chair/bench/church/mid{
 	dir = 4
@@ -20004,7 +20114,9 @@
 	pixel_y = 4
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ghd" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -20217,7 +20329,9 @@
 "gkJ" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "glb" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -20739,7 +20853,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gsM" = (
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/ruinedwood{
@@ -20919,7 +21035,9 @@
 "gvr" = (
 /obj/structure/table/vtable/v2,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gvu" = (
 /obj/structure/table/wood{
 	icon_state = "largetable"
@@ -21211,6 +21329,10 @@
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woodsrat/south)
+"gzJ" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
 "gzL" = (
 /obj/structure/stairs/stone,
 /turf/open/transparent/openspace,
@@ -21334,7 +21456,9 @@
 	pixel_y = 3
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gBp" = (
 /turf/closed/mineral/random/rogue,
 /area/rogue/indoors/town/warden)
@@ -21674,6 +21798,10 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/rockhill)
+"gHM" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/town/basement)
 "gHR" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt/road,
@@ -21851,7 +21979,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gLf" = (
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/town/sewer)
@@ -21972,7 +22102,7 @@
 /obj/item/roguecoin/copper/pile,
 /obj/item/rope/chain,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "gNy" = (
 /obj/structure/chair/bench/church{
 	dir = 4
@@ -22016,7 +22146,7 @@
 "gOb" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "gOd" = (
 /obj/structure/roguewindow/openclose{
 	dir = 8
@@ -22081,7 +22211,9 @@
 "gOU" = (
 /obj/structure/mannequin/male,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gPd" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4;
@@ -22180,7 +22312,7 @@
 "gPY" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "gQc" = (
 /obj/structure/fluff/railing/wood,
 /obj/structure/fluff/railing/border/north,
@@ -22342,7 +22474,9 @@
 "gTi" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gTj" = (
 /obj/machinery/light/rogue/chand{
 	pixel_y = 2
@@ -22576,7 +22710,9 @@
 /obj/item/natural/worms/leech,
 /obj/item/natural/worms/leech,
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gWX" = (
 /obj/structure/fluff/railing/border/west,
 /obj/structure/flora/roguegrass/herb/random,
@@ -22764,7 +22900,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "gZs" = (
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/cavewet/wizarddungeon)
@@ -23166,7 +23304,9 @@
 	},
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hgt" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -23450,7 +23590,9 @@
 "hlr" = (
 /obj/effect/turf_decal/magedecal,
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hlt" = (
 /obj/structure/bookcase/random/religion,
 /turf/open/floor/rogue/tile,
@@ -23680,7 +23822,9 @@
 	dir = 9
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hox" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 5
@@ -23759,7 +23903,9 @@
 /area/rogue/outdoors/woodsrat/north)
 "hpY" = (
 /turf/open/transparent/openspace,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hqe" = (
 /obj/structure/mineral_door/wood/fancywood{
 	lockid = "lord";
@@ -23809,7 +23955,9 @@
 	pixel_y = 44
 	},
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hqK" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border{
@@ -23880,7 +24028,9 @@
 /obj/structure/table/wood/poor,
 /obj/item/soap,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hrn" = (
 /obj/structure/fluff/railing/fence{
 	dir = 8
@@ -23957,7 +24107,9 @@
 	},
 /obj/item/book/rogue/arcyne,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hsk" = (
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/rogue/dirt/road,
@@ -24660,7 +24812,9 @@
 	dir = 5
 	},
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hFc" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -24844,7 +24998,9 @@
 	icon_state = "tablewood2"
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hHW" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/river,
@@ -25211,7 +25367,9 @@
 /obj/item/reagent_containers/food/snacks/grown/rogue/pipeweeddry,
 /obj/item/reagent_containers/food/snacks/grown/rogue/pipeweeddry,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hOJ" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -25269,7 +25427,9 @@
 	color = "#415e96"
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hPn" = (
 /obj/structure/bars/pipe{
 	dir = 1;
@@ -25866,7 +26026,9 @@
 "hYW" = (
 /obj/structure/fluff/alch,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hZa" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -25878,7 +26040,9 @@
 	pixel_y = 10
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "hZc" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/chicken,
 /obj/structure/fluff/nest,
@@ -26045,7 +26209,7 @@
 "ibs" = (
 /obj/structure/fluff/walldeco/maidendrape,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "ibw" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
@@ -26089,7 +26253,9 @@
 /obj/item/reagent_containers/powder/spice,
 /obj/effect/landmark/chest_or_mimic,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "icc" = (
 /turf/open/floor/rogue/tile{
 	icon_state = "glyph3"
@@ -26131,7 +26297,9 @@
 	pixel_x = 4
 	},
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ide" = (
 /turf/closed/wall/mineral/rogue/roofwall/outercorner{
 	dir = 8
@@ -26215,7 +26383,9 @@
 /obj/item/reagent_containers/glass/bottle,
 /obj/item/reagent_containers/glass/bottle,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ieb" = (
 /obj/structure/roguemachine/atm{
 	location_tag = "Guild Smithy Front";
@@ -26454,7 +26624,9 @@
 	color = "#415e96"
 	},
 /turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ihm" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -26758,7 +26930,9 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "inU" = (
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/cavewet/wizarddungeon)
@@ -27094,7 +27268,9 @@
 	},
 /obj/item/clothing/gloves/roguetown/nomagic,
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "itG" = (
 /obj/structure/flora/roguegrass/water/reeds{
 	pixel_y = 4
@@ -27125,7 +27301,9 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "iuc" = (
 /obj/effect/decal/remains/human,
 /turf/open/water/swamp,
@@ -27356,7 +27534,9 @@
 	dir = 5
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ixC" = (
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "vertw"
@@ -27991,7 +28171,9 @@
 	pixel_x = 32
 	},
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "iHm" = (
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/tavern)
@@ -28631,7 +28813,9 @@
 	lockid = "mage"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "iSF" = (
 /turf/open/floor/rogue/concrete,
 /area/rogue/outdoors/town/roofs)
@@ -28744,7 +28928,9 @@
 "iUS" = (
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "iUW" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/river{
@@ -28907,7 +29093,9 @@
 "iWU" = (
 /obj/structure/roguemachine/scomm/l,
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "iXc" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/natural/bundle/cloth,
@@ -28976,7 +29164,7 @@
 	},
 /obj/structure/fluff/walldeco/maidendrape,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "iYZ" = (
 /obj/structure/closet/crate/drawer/inn{
 	keylock = 1;
@@ -29593,7 +29781,7 @@
 "jiQ" = (
 /obj/structure/fluff/walldeco/maidendrape,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "jiY" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -29694,7 +29882,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jkC" = (
 /obj/structure/table/church/m{
 	icon_state = "churchtable_mid_alt"
@@ -29946,7 +30136,9 @@
 "jmX" = (
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jna" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/cobble,
@@ -30443,7 +30635,9 @@
 	pixel_x = 1
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jvD" = (
 /obj/structure/fluff/nest,
 /obj/effect/decal/cleanable/blood,
@@ -30493,7 +30687,9 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jwp" = (
 /obj/structure/winch{
 	name = "Crane winch"
@@ -30539,7 +30735,9 @@
 	dir = 10
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jxo" = (
 /obj/structure/stairs{
 	dir = 8
@@ -30624,7 +30822,9 @@
 "jzi" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jzl" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/tile,
@@ -30809,7 +31009,9 @@
 "jCL" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jCM" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8
@@ -31991,7 +32193,9 @@
 "jVg" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jVh" = (
 /obj/structure/closet/crate/chest{
 	pixel_x = 2;
@@ -32152,7 +32356,9 @@
 /obj/item/rogueore/cinnabar,
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jWT" = (
 /obj/structure/table/wood{
 	dir = 6;
@@ -32263,7 +32469,9 @@
 /area/rogue/indoors/town/bath)
 "jZd" = (
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "jZo" = (
 /obj/item/trash/candle,
 /turf/open/floor/rogue/dirt/road,
@@ -33342,7 +33550,7 @@
 "kqq" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "kqs" = (
 /obj/structure/stairs/stone,
 /obj/structure/fluff/railing/border{
@@ -33426,6 +33634,10 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
+"krA" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
 "krC" = (
 /obj/structure/fluff/railing/border{
 	dir = 4;
@@ -33717,7 +33929,9 @@
 /obj/item/natural/stone,
 /obj/item/natural/stone,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "kwz" = (
 /obj/item/fishingrod,
 /turf/open/floor/rogue/dirt,
@@ -33971,7 +34185,9 @@
 /obj/structure/fluff/walldeco/mageguild2,
 /obj/structure/arcyne_wall,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "kAM" = (
 /obj/structure/fluff/clock,
 /obj/machinery/light/rogue/wallfire/candle/blue,
@@ -34200,7 +34416,9 @@
 	pixel_x = -1
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "kFW" = (
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/shelter/mountains)
@@ -35099,7 +35317,9 @@
 	},
 /obj/item/reagent_containers/powder/spice,
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "kWe" = (
 /obj/structure/chair/wood/rogue{
 	dir = 8;
@@ -35198,10 +35418,6 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town)
-"kXA" = (
-/obj/structure/chair/smallbench,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bograt/north)
 "kXH" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4;
@@ -35536,7 +35752,9 @@
 "lcI" = (
 /obj/structure/closet/crate/roguecloset,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "lcK" = (
 /obj/structure/fluff/traveltile/magicportal{
 	aportalgoesto = "wizdun2";
@@ -36131,7 +36349,9 @@
 	pixel_y = -32
 	},
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "loW" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -36232,7 +36452,9 @@
 "lqf" = (
 /obj/structure/mirror,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "lqg" = (
 /obj/structure/fluff/railing/border/west,
 /obj/item/clothing/mask/cigarette/pipe,
@@ -36251,7 +36473,7 @@
 /obj/structure/table/wood,
 /obj/item/storage/roguebag,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "lqx" = (
 /obj/structure/flora/ausbushes/reedbush,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -36318,7 +36540,7 @@
 	pixel_y = -2
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "lrs" = (
 /turf/closed/mineral/rogue,
 /area/rogue/under/town/sewer)
@@ -36434,7 +36656,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "lux" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -36614,7 +36838,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "lxn" = (
 /obj/structure/stairs{
 	dir = 8
@@ -36886,7 +37112,7 @@
 	redstone_id = "tourneytop"
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "lCv" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -37569,7 +37795,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "lOc" = (
 /turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/indoors/town/cell)
@@ -37614,7 +37842,7 @@
 	redstone_id = "tourneybottom"
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "lOT" = (
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/woodsrat/south)
@@ -38402,7 +38630,9 @@
 /turf/open/floor/rogue/greenstone/runed{
 	dir = 4
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "maJ" = (
 /obj/structure/bars/steel,
 /turf/open/water/cleanshallow,
@@ -38434,7 +38664,7 @@
 "mbf" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "mbg" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobble,
@@ -38463,7 +38693,9 @@
 "mbK" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mbM" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
@@ -38632,7 +38864,7 @@
 	},
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "meu" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/rogue/grass,
@@ -38685,7 +38917,9 @@
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mfd" = (
 /obj/item/roguecoin/copper/pile,
 /turf/open/floor/rogue/blocks,
@@ -38713,7 +38947,9 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mfy" = (
 /obj/structure/fluff/statue{
 	desc = "A worn looking statue sculpted in Necra's image.";
@@ -38738,7 +38974,9 @@
 /area/rogue/indoors/town/church)
 "mfK" = (
 /turf/closed/wall/mineral/rogue/wooddark,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mfL" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -39199,7 +39437,9 @@
 	pixel_y = -1
 	},
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mlu" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -40166,7 +40406,9 @@
 "mBJ" = (
 /obj/structure/roguemachine/scomm,
 /turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mBL" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woodsrat/south)
@@ -40465,7 +40707,9 @@
 "mGS" = (
 /obj/machinery/light/rogue/firebowl/standing/green,
 /turf/open/floor/rogue/volcanic,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mGT" = (
 /obj/machinery/light/rogue/lanternpost,
 /turf/open/floor/rogue/cobble,
@@ -40778,7 +41022,9 @@
 /obj/item/reagent_containers/food/snacks/grown/berries/rogue,
 /obj/item/reagent_containers/food/snacks/grown/berries/rogue,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mMD" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
@@ -40831,6 +41077,13 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/bograt/north)
+"mMZ" = (
+/obj/machinery/light/rogue/torchholder{
+	pixel_x = -1;
+	pixel_y = 30
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
 "mNb" = (
 /obj/structure/fluff/statue/gargoyle/candles,
 /turf/open/floor/rogue/blocks,
@@ -40974,7 +41227,7 @@
 	icon_state = "barsbent"
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "mQq" = (
 /turf/closed/wall/mineral/rogue/pipe{
 	dir = 4;
@@ -41044,7 +41297,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/rogue/greenstone,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "mRr" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/cobble,
@@ -41112,7 +41365,9 @@
 /area/rogue/outdoors/woodsrat/south)
 "mSU" = (
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "mTo" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/carpet/purple,
@@ -41170,7 +41425,7 @@
 	pixel_y = 0
 	},
 /turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "mUq" = (
 /obj/structure/winch{
 	gid = "townin";
@@ -41542,7 +41797,9 @@
 "nbo" = (
 /obj/structure/fluff/walldeco/mageguild2,
 /turf/closed/wall/mineral/rogue/stone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "nbq" = (
 /obj/item/reagent_containers/glass/bowl,
 /turf/open/floor/rogue/cobble,
@@ -41565,7 +41822,9 @@
 	pixel_y = 13
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "nbv" = (
 /obj/structure/chair/wood/rogue/fancy{
 	dir = 1
@@ -41630,7 +41889,9 @@
 	pixel_y = -32
 	},
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ncF" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -41866,7 +42127,9 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ngn" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -42275,7 +42538,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "nnJ" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/blocks,
@@ -42425,7 +42690,9 @@
 "npw" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "npC" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/closed/wall/mineral/rogue/wood,
@@ -43560,7 +43827,9 @@
 "nKj" = (
 /obj/structure/roguemachine/scomm/r,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "nKr" = (
 /obj/structure/flora/roguetree,
 /turf/closed/mineral/rogue,
@@ -44081,7 +44350,9 @@
 /area/rogue/indoors/inq)
 "nTQ" = (
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "nTS" = (
 /obj/structure/table/church/end,
 /obj/item/rogueweapon/huntingknife/stoneknife,
@@ -44545,7 +44816,9 @@
 	pixel_y = 17
 	},
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "oaG" = (
 /obj/structure/stairs,
 /obj/structure/fluff/railing/border{
@@ -44664,7 +44937,9 @@
 	dir = 9
 	},
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ocN" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/town/sewer)
@@ -44859,7 +45134,9 @@
 	dir = 6
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ofL" = (
 /obj/item/chair/rogue/fancy,
 /turf/open/floor/rogue/cobble,
@@ -44975,7 +45252,7 @@
 "ohI" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "ohJ" = (
 /obj/structure/flora/roguetree,
 /turf/open/floor/rogue/dirt/road,
@@ -45276,7 +45553,9 @@
 /obj/item/rogueore/cinnabar,
 /obj/item/rogueore/cinnabar,
 /turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "omM" = (
 /obj/machinery/light/roguestreet/orange/walllamp{
 	dir = 4
@@ -45320,7 +45599,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ony" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -45910,7 +46191,9 @@
 	dir = 5
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "owH" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -46207,7 +46490,9 @@
 	color = "#fbbdff"
 	},
 /turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "oCg" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/herringbone,
@@ -46474,7 +46759,9 @@
 "oGI" = (
 /obj/effect/decal/cleanable/roguerune/arcyne/enchantment/greater,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "oGO" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/sewer,
@@ -46501,7 +46788,9 @@
 "oHc" = (
 /obj/structure/fluff/walldeco/mageguild,
 /turf/closed/wall/mineral/rogue/stone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "oHg" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/woodturned,
@@ -47151,7 +47440,9 @@
 	name = "Holding Cell"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "oSe" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
@@ -47468,7 +47759,7 @@
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/restraints/legcuffs/beartrap,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "oWJ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -47663,7 +47954,9 @@
 	pixel_x = 0
 	},
 /turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "oZm" = (
 /obj/structure/glowshroom,
 /turf/open/water/cleanshallow{
@@ -48124,7 +48417,9 @@
 	name = "Wizard's Tower"
 	},
 /turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "phZ" = (
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/rogue/dirt,
@@ -48411,7 +48706,9 @@
 /turf/open/floor/rogue/greenstone/runed{
 	dir = 4
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "pmk" = (
 /obj/structure/closet/crate/roguecloset{
 	keylock = 1;
@@ -48637,7 +48934,9 @@
 /obj/item/clothing/suit/roguetown/shirt/robe/mageblue,
 /obj/item/clothing/head/roguetown/wizhat,
 /turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ppN" = (
 /obj/structure/pillory{
 	lockid = list("warden", "walls", "garrison", "dungeon")
@@ -49044,7 +49343,9 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "pvG" = (
 /obj/structure/fluff/railing/border{
 	dir = 5;
@@ -49482,7 +49783,9 @@
 "pCP" = (
 /obj/structure/table/wood,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "pCR" = (
 /obj/structure/stairs{
 	dir = 8
@@ -49512,7 +49815,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "pCY" = (
 /obj/structure/chair/wood,
 /turf/open/floor/rogue/woodturned,
@@ -49520,7 +49823,7 @@
 "pDh" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "pDk" = (
 /obj/structure/fluff/railing/wood,
 /obj/structure/fluff/railing/border{
@@ -49917,7 +50220,9 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "pKu" = (
 /obj/structure/flora/roguegrass/bush/wall/tall,
 /turf/open/floor/rogue/wood,
@@ -49997,7 +50302,9 @@
 "pLz" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "pLA" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /obj/structure/fluff/railing/border{
@@ -50893,7 +51200,7 @@
 	lockid = "nightman"
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "pZV" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/dirt/road,
@@ -51107,7 +51414,9 @@
 "qdJ" = (
 /obj/machinery/light/rogue/cauldron,
 /turf/open/floor/rogue/metal/barograte,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "qdK" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/warden)
@@ -51361,6 +51670,10 @@
 /obj/structure/fluff/psycross,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/church)
+"qiL" = (
+/obj/effect/landmark/events/haunts,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/town/basement)
 "qiV" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -51581,6 +51894,9 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woodsrat/south)
+"qmQ" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/town/basement)
 "qmS" = (
 /obj/structure/rack/rogue/shelf,
 /obj/structure/rack/rogue/shelf/big{
@@ -51900,7 +52216,9 @@
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "qqj" = (
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/dwarfin/rockhill)
@@ -52960,7 +53278,9 @@
 /area/rogue/outdoors/town/rockhill)
 "qJQ" = (
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "qJR" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
 /area/rogue/under/cavewet/wizarddungeon)
@@ -53310,7 +53630,9 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /obj/item/broom,
 /turf/open/floor/rogue/volcanic,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "qRN" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -53345,7 +53667,9 @@
 	lockid = "mage"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "qSA" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -53434,7 +53758,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "qTy" = (
 /obj/structure/table/wood{
 	dir = 8;
@@ -53629,7 +53953,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "qXX" = (
 /obj/structure/closet/crate/roguecloset{
 	keylock = 1;
@@ -53932,7 +54258,9 @@
 /obj/item/reagent_containers/powder/salt,
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rde" = (
 /obj/structure/closet/crate/roguecloset{
 	keylock = 1;
@@ -54120,7 +54448,9 @@
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rhe" = (
 /obj/structure/bars/grille,
 /obj/structure/bars/grille,
@@ -54346,7 +54676,9 @@
 	pixel_y = -32
 	},
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rlN" = (
 /obj/structure/table/wood/poor,
 /obj/item/book/rogue/law,
@@ -54641,7 +54973,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rqm" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/grass,
@@ -55213,7 +55547,9 @@
 	pixel_y = 6
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rzo" = (
 /obj/structure/fluff/railing/border{
 	dir = 6;
@@ -55263,7 +55599,9 @@
 /area/rogue/indoors/town/bath)
 "rAz" = (
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rAK" = (
 /obj/structure/fluff/walldeco/stone,
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
@@ -55448,7 +55786,9 @@
 /area/rogue/indoors/town/warden)
 "rDv" = (
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rDC" = (
 /obj/structure/mineral_door/wood{
 	lockid = "archive";
@@ -55594,7 +55934,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rHl" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
@@ -55748,7 +56090,9 @@
 	lockid = "mage"
 	},
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rJc" = (
 /obj/structure/table/wood/poor,
 /turf/open/floor/carpet/royalblack,
@@ -56096,7 +56440,9 @@
 	color = "#415e96"
 	},
 /turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rOi" = (
 /obj/item/roguekey/nightmaiden{
 	lockid = "lux1";
@@ -56156,7 +56502,9 @@
 /obj/item/paper/scroll,
 /obj/item/natural/feather,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rPg" = (
 /obj/structure/bell_common{
 	pixel_x = -12;
@@ -56235,7 +56583,7 @@
 /obj/item/rogueweapon/mace/wsword,
 /obj/item/rogueweapon/mace/wsword,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "rQx" = (
 /obj/effect/landmark/quest_spawner/hard,
 /turf/open/floor/rogue/grassgrey,
@@ -56425,7 +56773,9 @@
 /obj/item/clothing/suit/roguetown/shirt/shortshirt,
 /obj/item/clothing/suit/roguetown/shirt/robe/mageblue,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rTC" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/outdoors/town/roofs)
@@ -56500,7 +56850,7 @@
 	redstone_id = "tourneybottom"
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "rVm" = (
 /obj/structure/chair/bench/couchablack/r,
 /turf/open/floor/rogue/tile/bath,
@@ -56762,7 +57112,9 @@
 /obj/effect/spawner/lootdrop/cheap_jewelry_spawner,
 /obj/structure/rack/rogue/shelf/biggest,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "rZf" = (
 /obj/effect/landmark/events/haunts,
 /turf/open/floor/rogue/dirt,
@@ -57114,7 +57466,9 @@
 "seO" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "seS" = (
 /obj/structure/fluff/railing/wood{
 	pixel_y = -4
@@ -57424,7 +57778,9 @@
 	mailtag = "Court Magos's Room"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "sjc" = (
 /obj/item/natural/poo/horse,
 /turf/open/floor/rogue/greenstone,
@@ -57535,7 +57891,7 @@
 "slb" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "slj" = (
 /obj/structure/chair/wood/rogue{
 	dir = 8
@@ -57732,7 +58088,9 @@
 /obj/item/soap,
 /obj/structure/table/vtable,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "soz" = (
 /turf/closed/wall/mineral/rogue/decostone/cand,
 /area/rogue/indoors/town/bath)
@@ -58840,7 +59198,7 @@
 /obj/item/rogueweapon/mace/woodclub,
 /obj/item/rogueweapon/mace/woodclub,
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "sHf" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
 /turf/open/water/swamp,
@@ -58898,7 +59256,9 @@
 	pixel_x = 0
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "sHK" = (
 /obj/structure/fluff/statue/knight/interior/r,
 /turf/open/floor/rogue/churchrough,
@@ -59627,7 +59987,9 @@
 /turf/open/floor/rogue/greenstone/runed{
 	dir = 8
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "sVb" = (
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grassyel,
@@ -60210,7 +60572,9 @@
 /obj/structure/table/wood/poor,
 /obj/item/clothing/neck/roguetown/collar/leather,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "teb" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -60236,7 +60600,9 @@
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tel" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/blocks,
@@ -60373,7 +60739,9 @@
 "the" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "thi" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grasscold,
@@ -60942,7 +61310,9 @@
 "tqy" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tqA" = (
 /obj/structure/fermentation_keg/random/beer,
 /turf/open/floor/rogue/dirt/road,
@@ -61049,7 +61419,9 @@
 	},
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tsd" = (
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/outdoors/rtfield/rockhill)
@@ -61207,7 +61579,9 @@
 /area/rogue/indoors/town/manor/rockhill)
 "tuP" = (
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tuU" = (
 /obj/structure/rack/rogue/shelf,
 /turf/open/floor/rogue/cobble/mossy,
@@ -61383,7 +61757,9 @@
 	lockid = "tower"
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "txm" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/tile/bath{
@@ -61504,7 +61880,9 @@
 "tzw" = (
 /obj/effect/decal/cleanable/roguerune/arcyne/summoning/mid,
 /turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tzy" = (
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/mace/wsword,
@@ -61653,7 +62031,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "tCt" = (
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/ruinedwood,
@@ -61797,7 +62175,9 @@
 "tEU" = (
 /obj/structure/table/wood/poor,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tEW" = (
 /obj/structure/chair/wood/rogue{
 	dir = 1
@@ -61880,7 +62260,9 @@
 /obj/item/clothing/suit/roguetown/shirt/shortshirt,
 /obj/item/clothing/suit/roguetown/shirt/robe/magered,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tGp" = (
 /obj/effect/landmark/start/villager{
 	dir = 1
@@ -62079,7 +62461,9 @@
 /area/rogue/indoors/town/bath)
 "tIH" = (
 /turf/closed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tIK" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -62383,7 +62767,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "tNu" = (
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/roofs)
@@ -62551,7 +62935,9 @@
 	color = "#415e96"
 	},
 /turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "tQV" = (
 /mob/living/carbon/human/species/skeleton/npc/pirate,
 /turf/open/water/swamp/deep,
@@ -62766,7 +63152,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "tUx" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/floor/rogue/dirt/road,
@@ -64153,7 +64539,7 @@
 	redstone_id = "tourneytop"
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "utT" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -64204,6 +64590,9 @@
 	},
 /turf/open/water/swamp,
 /area/rogue/under/town/sewer)
+"uuo" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/town/basement)
 "uuq" = (
 /obj/structure/mirror{
 	pixel_y = 28
@@ -64306,7 +64695,9 @@
 	pixel_x = -32
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "uvY" = (
 /turf/open/transparent/openspace,
 /area/rogue/under/town/sewer)
@@ -64417,7 +64808,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "uxC" = (
 /obj/structure/flora/roguetree/pine,
 /turf/open/floor/rogue/dirt,
@@ -64935,7 +65328,9 @@
 /area/rogue/under/cavewet)
 "uIk" = (
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "uIv" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp{
 	wander = 0
@@ -65284,7 +65679,9 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "uNL" = (
 /obj/structure/closet/crate/drawer,
 /turf/open/floor/carpet/royalblack,
@@ -65361,7 +65758,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "vertw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "uOH" = (
 /obj/item/clothing/neck/roguetown/psicross/noc{
 	pixel_y = 11
@@ -65605,7 +66004,9 @@
 /obj/effect/landmark/start/magician,
 /obj/item/bedsheet/rogue/fabric_double,
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "uSG" = (
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 4
@@ -65679,7 +66080,7 @@
 "uTy" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "uTJ" = (
 /obj/item/grown/log/tree,
 /turf/open/floor/rogue/ruinedwood,
@@ -65825,7 +66226,7 @@
 /obj/structure/plasticflaps,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "uVP" = (
 /obj/structure/fluff/walldeco/innsign,
 /turf/closed/wall/mineral/rogue/decowood,
@@ -66101,7 +66502,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/blocks,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "vbt" = (
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/concrete,
@@ -66917,7 +67318,9 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/stellar,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "vqG" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/town/cell)
@@ -67934,7 +68337,9 @@
 	dir = 6
 	},
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "vHF" = (
 /obj/structure/closet/crate/roguecloset{
 	keylock = 1;
@@ -68078,7 +68483,9 @@
 /area/rogue/indoors/town/cell)
 "vJv" = (
 /turf/open/floor/rogue/grasscold,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "vJA" = (
 /obj/structure/table/wood/long_table,
 /obj/item/paper/scroll,
@@ -68476,7 +68883,9 @@
 	},
 /obj/structure/chair/bench/couch,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "vPY" = (
 /obj/structure/fluff/walldeco/bigpainting{
 	pixel_x = 0
@@ -68793,7 +69202,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "vVy" = (
 /mob/living/carbon/human/species/skeleton/npc/rockhill,
 /turf/open/floor/rogue/dirt/road,
@@ -68913,7 +69324,9 @@
 /obj/item/clothing/suit/roguetown/shirt/shortshirt,
 /obj/item/clothing/suit/roguetown/shirt/robe/mage,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "vYh" = (
 /obj/structure/rack/rogue,
 /obj/item/reagent_containers/glass/cup/wooden,
@@ -68993,6 +69406,10 @@
 	icon_state = "bathtileratwood"
 	},
 /area/rogue/indoors/town/cell)
+"vZh" = (
+/obj/structure/chair/smallbench,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/rtfield/rockhill)
 "vZo" = (
 /obj/structure/roguemachine/headeater,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -69209,7 +69626,7 @@
 	name = "Arena"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "wbG" = (
 /obj/structure/bed/rogue/inn/hay{
 	dir = 1;
@@ -69266,7 +69683,9 @@
 /obj/item/spellbook_unfinished/pre_arcyne,
 /obj/item/spellbook_unfinished/pre_arcyne,
 /turf/open/floor/rogue/greenstone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wcx" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -69407,7 +69826,7 @@
 	pixel_y = 0
 	},
 /turf/open/water/swamp,
-/area/rogue/outdoors/town/rockhill)
+/area/rogue/under/town/basement)
 "wfD" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4;
@@ -69486,7 +69905,9 @@
 "wgt" = (
 /obj/structure/fluff/clockwork/alloy_shards,
 /turf/open/floor/rogue/churchmarble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wgx" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1;
@@ -69833,7 +70254,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wmq" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -69841,7 +70264,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wmA" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -69978,7 +70403,9 @@
 	pixel_y = 32
 	},
 /turf/closed/wall/mineral/rogue/stone,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "woC" = (
 /obj/structure/bed/rogue/inn/double{
 	name = "Love Nest"
@@ -70047,7 +70474,9 @@
 /turf/open/floor/rogue/tile{
 	icon_state = "greenstone"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wpu" = (
 /turf/open/water/bath,
 /area/rogue/indoors/town/bath)
@@ -70422,7 +70851,9 @@
 "wwy" = (
 /obj/structure/fluff/walldeco/mageguild2,
 /turf/closed/wall/mineral/rogue/wooddark,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wwz" = (
 /obj/structure/closet/crate/drawer{
 	keylock = 1;
@@ -70478,7 +70909,9 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wxn" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -70599,7 +71032,9 @@
 /area/rogue/outdoors/town/rockhill)
 "wyk" = (
 /turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wyl" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/cobble/mossy,
@@ -70706,7 +71141,9 @@
 	name = "Noc's Eye"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wAu" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/woodturned,
@@ -70717,7 +71154,9 @@
 	icon_state = "largetable"
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wAC" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/churchbrick,
@@ -71452,7 +71891,9 @@
 "wMX" = (
 /obj/effect/decal/cleanable/roguerune/arcyne/enchantment,
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wNb" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/grass,
@@ -71696,7 +72137,9 @@
 	pixel_y = -4
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wPz" = (
 /obj/structure/fluff/railing/fence{
 	dir = 1;
@@ -71943,7 +72386,9 @@
 	},
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/volcanic,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "wTx" = (
 /obj/machinery/light/roguestreet/orange/walllamp{
 	dir = 4
@@ -72622,7 +73067,9 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xfQ" = (
 /obj/structure/table/wood/poor,
 /turf/open/floor/rogue/blocks,
@@ -72674,7 +73121,9 @@
 	name = "Warded summoning chamber"
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xhp" = (
 /obj/structure/mineral_door/wood/red{
 	locked = 1;
@@ -73334,7 +73783,9 @@
 	pixel_x = 8
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xsy" = (
 /obj/structure/rack/rogue,
 /obj/item/reagent_containers/glass/cup/wooden,
@@ -73451,7 +73902,9 @@
 	color = "#ffff00"
 	},
 /turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xuZ" = (
 /obj/effect/decal/cleanable/debris/woody,
 /turf/open/floor/rogue/volcanic,
@@ -73614,7 +74067,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xxv" = (
 /turf/open/water/river{
 	dir = 8;
@@ -73665,7 +74120,9 @@
 /area/rogue/under/cavewet)
 "xyC" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xyI" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood3"
@@ -74722,7 +75179,9 @@
 	pixel_x = -4
 	},
 /turf/open/floor/carpet/inn,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xQg" = (
 /obj/structure/closet/crate/drawer,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
@@ -74895,7 +75354,9 @@
 	desc = "This key should open anything within the wizard's tower."
 	},
 /turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xSV" = (
 /obj/structure/bed/rogue/inn/wool{
 	dir = 1
@@ -75190,7 +75651,9 @@
 	dir = 6
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xXO" = (
 /obj/structure/fluff/railing/fence{
 	dir = 4
@@ -75318,7 +75781,9 @@
 	pixel_x = -20
 	},
 /turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "xZv" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -75982,7 +76447,9 @@
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ykd" = (
 /obj/item/reagent_containers/food/snacks/crow{
 	dir = 1
@@ -76053,7 +76520,9 @@
 "ykQ" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
+/area/rogue/indoors/town/magician{
+	name = "Mage's Tower"
+	})
 "ykS" = (
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/outdoors/rtfield/rockhill/above)
@@ -248985,10 +249454,10 @@ lMC
 xrC
 xrC
 scK
-uJF
-uJF
-uJF
-uJF
+uuo
+uuo
+uuo
+uuo
 gLf
 gLf
 nXf
@@ -249417,8 +249886,8 @@ qUr
 pQc
 jZb
 idl
-wbg
-wbg
+iTw
+iTw
 gNw
 mUn
 lrs
@@ -249850,9 +250319,9 @@ lXm
 scK
 scK
 jiQ
-wbg
-uJF
-uJF
+iTw
+uuo
+uuo
 lrs
 gLf
 rRb
@@ -250281,8 +250750,8 @@ lys
 gZt
 njY
 soz
-twN
-wVI
+mMZ
+cBf
 aCn
 wfx
 fZL
@@ -250386,7 +250855,7 @@ kuY
 yjP
 wMB
 efu
-eiP
+vZh
 spp
 uaL
 fxx
@@ -250714,9 +251183,9 @@ rvT
 njY
 scK
 ibs
-wbg
-uJF
-uJF
+iTw
+uuo
+uuo
 mXk
 gLf
 nBw
@@ -251145,8 +251614,8 @@ rfY
 eFJ
 uAi
 eFJ
-wVI
-wbg
+cBf
+iTw
 oWI
 mUn
 lrs
@@ -251579,15 +252048,15 @@ jRL
 eFJ
 mQj
 wbD
-lDc
-uJF
-lDc
-uJF
-uJF
-uJF
-oAn
-oAn
-uJF
+rDV
+uuo
+rDV
+uuo
+uuo
+uuo
+txa
+txa
+uuo
 gLf
 lrs
 agM
@@ -252010,16 +252479,16 @@ oxV
 deO
 sMN
 qTv
-wbg
-wbg
-hji
+iTw
+iTw
+krA
 lrm
-wVI
+cBf
 tUs
-rUO
-wVI
+gHM
+cBf
 tUs
-uJF
+uuo
 tNq
 lrs
 lrs
@@ -252443,15 +252912,15 @@ jnW
 scK
 iYW
 lqu
-wVI
-wVI
-wbg
-jIq
-wVI
+cBf
+cBf
+iTw
+gzJ
+cBf
 gPY
-wVI
-wbg
-jIq
+cBf
+iTw
+gzJ
 fMh
 lrs
 lrs
@@ -252873,18 +253342,18 @@ oxV
 oxV
 ckW
 scK
-uJF
-wVI
-wbg
-uJF
+uuo
+cBf
+iTw
+uuo
 pDh
 pDh
 pDh
 pDh
-uJF
+uuo
 kqq
-lDc
-wbg
+rDV
+iTw
 rRb
 lrs
 rSC
@@ -253306,17 +253775,17 @@ qoJ
 eFJ
 scK
 fee
-jIq
-wVI
+gzJ
+cBf
 utB
-aOn
-aOn
-aOn
-aOn
+cEK
+cEK
+cEK
+cEK
 pDh
-jIq
+gzJ
 sHb
-wVI
+cBf
 rRb
 lrs
 rSC
@@ -253737,17 +254206,17 @@ soz
 eFJ
 rRb
 rRb
-uJF
-wbg
-jIq
+uuo
+iTw
+gzJ
 pDh
-aOn
+cEK
 mbf
 eGb
-aOn
+cEK
 pDh
-jIq
-wbg
+gzJ
+iTw
 gPY
 lrs
 rSC
@@ -254169,18 +254638,18 @@ gLf
 rRb
 rRb
 lrs
-uJF
-wbg
-jIq
+uuo
+iTw
+gzJ
 pDh
-aOn
-aOn
-wSq
-aOn
+cEK
+cEK
+qiL
+cEK
 pDh
-jIq
+gzJ
 rQs
-wVI
+cBf
 rRb
 agM
 uEX
@@ -254601,18 +255070,18 @@ gMO
 rRb
 lrs
 rRb
-uJF
+uuo
 vbj
-wbg
+iTw
 pDh
-aOn
+cEK
 aab
-aOn
-tgy
-uJF
+cEK
+qmQ
+uuo
 slb
-lDc
-wbg
+rDV
+iTw
 rRb
 rSC
 lrs
@@ -255034,16 +255503,16 @@ rRb
 lrs
 rRb
 cFz
-wbg
-jIq
+iTw
+gzJ
 pDh
-tgy
-aOn
-aOn
-aOn
+qmQ
+cEK
+cEK
+cEK
 lOP
-wbg
-wVI
+iTw
+cBf
 gPY
 lrs
 oGO
@@ -255464,18 +255933,18 @@ dWF
 gMO
 rRb
 rRb
-lDc
-uJF
-udS
-tFB
-uJF
+rDV
+uuo
+dnR
+csm
+uuo
 gOb
 gOb
 gOb
 gOb
-uJF
-tFB
-uJF
+uuo
+csm
+uuo
 mRn
 rRb
 mXk
@@ -255896,18 +256365,18 @@ gMO
 gMO
 gMO
 fOW
-uJF
-wbg
-wVI
-wVI
+uuo
+iTw
+cBf
+cBf
 ohI
 uTy
 pCW
 pCW
 uTy
 tCr
-wVI
-uJF
+cBf
+uuo
 eUp
 gLf
 gLf
@@ -256329,17 +256798,17 @@ gMO
 gMO
 gLf
 dVw
-wVI
-wVI
-wbg
+cBf
+cBf
+iTw
 fRL
 pZK
 lCp
 rVi
 pZK
 mdX
-wVI
-uJF
+cBf
+uuo
 gLf
 rSC
 rSC
@@ -256492,7 +256961,7 @@ mzM
 xou
 cyr
 nqU
-kXA
+eiG
 ljM
 miG
 fPd
@@ -256760,18 +257229,18 @@ gLf
 gLf
 udz
 gLf
-oAn
-uJF
-uJF
-uJF
-oAn
-oAn
-oAn
-oAn
-uJF
-uJF
+txa
+uuo
+uuo
+uuo
+txa
+txa
+txa
+txa
+uuo
+uuo
 uVK
-uJF
+uuo
 gLf
 rSC
 gLf
