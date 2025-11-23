@@ -23,6 +23,12 @@
 		if("on death")
 			RegisterSignal(M, COMSIG_MOB_DEATH, PROC_REF(on_signal_trigger))
 			signals += COMSIG_MOB_DEATH
+		if("on beheaded")
+			RegisterSignal(M, COMSIG_MOB_DECAPPED, PROC_REF(on_signal_trigger))
+			signals += COMSIG_MOB_DECAPPED
+		if("on dismembered")
+			RegisterSignal(M, COMSIG_MOB_DISMEMBER, PROC_REF(on_signal_trigger))
+			signals += COMSIG_MOB_DISMEMBER
 		if("on sleep")
 			RegisterSignal(M, COMSIG_LIVING_STATUS_SLEEP, PROC_REF(on_signal_trigger))
 			signals += COMSIG_LIVING_STATUS_SLEEP
@@ -36,9 +42,15 @@
 		if("on receive damage")
 			RegisterSignal(M, COMSIG_MOB_APPLY_DAMGE, PROC_REF(on_signal_trigger))
 			signals += COMSIG_MOB_APPLY_DAMGE
+		if("on cast spell")
+			RegisterSignal(M, COMSIG_MOB_CAST_SPELL, PROC_REF(on_signal_trigger))
+			signals += COMSIG_MOB_CAST_SPELL
 		if("on spell or miracle target")
 			RegisterSignal(M, COMSIG_MOB_RECEIVE_MAGIC, PROC_REF(on_signal_trigger))
 			signals += COMSIG_MOB_RECEIVE_MAGIC
+		if("on cut tree")
+			RegisterSignal(M, COMSIG_MOB_FELL_TREE, PROC_REF(on_signal_trigger))
+			signals += COMSIG_MOB_FELL_TREE
 		if("on orgasm")
 			RegisterSignal(M, COMSIG_MOB_EJACULATED, PROC_REF(on_signal_trigger))
 			signals += COMSIG_MOB_EJACULATED
@@ -62,41 +74,6 @@
 	if(trigger == "on spawn")
 		check_trigger("on spawn")
 
-/datum/modular_curse/proc/on_signal_trigger()
-	if(!owner)
-		return
-	check_trigger(trigger)
-
-/datum/modular_curse/proc/detach()
-	unregister_all_signals()
-	owner = null
-	signals = list()
-	qdel(src)
-
-/datum/modular_curse/proc/check_trigger(trigger_name)
-	if(!owner)
-		return
-
-	if(trigger != trigger_name)
-		return
-
-	if(expires <= now_days())
-		var/ck = owner?.ckey
-		detach()
-		if(ck)
-			remove_player_curse(ck, name)
-		return
-
-	// cooldown
-	if(world.time < last_trigger + (cooldown * 10))
-		return
-
-	if(!prob(chance))
-		return
-
-	last_trigger = world.time
-	trigger_effect()
-
 /datum/modular_curse/proc/trigger_effect()
 	if(!owner)
 		return
@@ -109,7 +86,7 @@
 			if(!debuff_id || !istype(debuff_id, /datum/status_effect))
 				return
 			L.apply_status_effect(debuff_id)
-			//notify_player_of_effect(L, effect, TRUE, debuff_id)
+			//notify_player_of_effect(L, trigger, effect, TRUE)
 		if("remove trait")
 			var/trait_id = effect_args["trait"]
 			if(!trait_id)
@@ -244,6 +221,41 @@
 			// Unknown effect
 			return
 
+/datum/modular_curse/proc/on_signal_trigger()
+	if(!owner)
+		return
+	check_trigger(trigger)
+
+/datum/modular_curse/proc/detach()
+	unregister_all_signals()
+	owner = null
+	signals = list()
+	qdel(src)
+
+/datum/modular_curse/proc/check_trigger(trigger_name)
+	if(!owner)
+		return
+
+	if(trigger != trigger_name)
+		return
+
+	if(expires <= now_days())
+		var/ck = owner?.ckey
+		detach()
+		if(ck)
+			remove_player_curse(ck, name)
+		return
+
+	// cooldown
+	if(world.time < last_trigger + (cooldown * 10))
+		return
+
+	if(!prob(chance))
+		return
+
+	last_trigger = world.time
+	trigger_effect()
+
 /datum/modular_curse/proc/unregister_all_signals()
 	if(!owner || !signals || !signals.len)
 		return
@@ -252,14 +264,13 @@
 		UnregisterSignal(owner, S)
 
 	signals.Cut()
+
 ////////////////////////////////////////////////////////////
 //  TIME HELPER
 ////////////////////////////////////////////////////////////
 
 /proc/now_days()
 	return round((world.realtime / 10) / 86400)
-
-
 
 ////////////////////////////////////////////////////////////
 //  JSON LOAD / SAVE
@@ -497,14 +508,15 @@
 	var/list/trigger_list = list(
 		"on spawn",
 		"on death",
-		//"on beheaded",
+		"on beheaded",
+		"on dismembered",
 		"on sleep",
 		"on attack",
 		"on receive damage",
-		//on cast spell,
+		"on cast spell,
 		"on spell or miracle target",
 		//"on break wall/door/window",
-		//"on cut tree",
+		"on cut tree",
 		//"on craft",
 		"on orgasm",
 		//"on bite",
@@ -557,6 +569,7 @@
 		//"make werewolf",
 		"shock",
 		"add fire stack",
+		//"cbt",
 		//"easy ambush",
 		//"difficult ambush",
 		"explode",
@@ -672,7 +685,7 @@
 	// ---- Generate name ----
 	var/cname_safe_effect = replacetext(effect_proc, " ", "_")
 	var/cname_safe_trigger = replacetext(trigger, " ", "_")
-	var/curse_name = "[chance]pct_[cname_safe_effect]_[cname_safe_trigger]_[rand(1000,9999)]"
+	var/curse_name = "[chance]percent_[cname_safe_effect]_[cname_safe_trigger]_[rand(1000,9999)]"
 
 	// ---- Apply ----
 	var/success = apply_player_curse(

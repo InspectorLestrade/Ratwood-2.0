@@ -500,6 +500,7 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 		QDEL_IN(spell, overlay_lifespan)
 
 /obj/effect/proc_holder/spell/proc/cast(list/targets, mob/user = usr)
+	SEND_SIGNAL(user, COMSIG_MOB_CAST_SPELL)
 	record_featured_object_stat(FEATURED_STATS_SPELLS, name)
 	return TRUE
 

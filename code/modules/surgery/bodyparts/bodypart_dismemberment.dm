@@ -70,6 +70,7 @@
 				stress2give = /datum/stressevent/viewsinpunish
 
 	if(body_zone == BODY_ZONE_HEAD)
+		SEND_SIGNAL(C, COMSIG_MOB_DECAPPED)
 		// decaps should happen in two phases: the first one inflicts a spinal column sever, killing them instantly.
 		// if they're already spinal-severed, THEN the head is removed.
 		// extra note: we only do this for mobs with a mind, aka not NPCS. npcs always get insta-decapped as before
