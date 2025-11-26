@@ -23,11 +23,13 @@
 	// taur_icon_state sets which icon to use from icons/mob/taurs.dmi to render
 	// (we don't use icon_state to avoid duplicate rendering on dropped organs)
 	var/taur_icon_state = "naga_s"
+	var/taur_markings_state = null
 
 	// We can Blend() a color with the base greyscale color, only some tails support this
 	var/has_taur_color = FALSE
 	var/color_blend_mode = BLEND_ADD
 	var/taur_color = null
+	var/taur_markings = null
 
 	// Clip Masks allow you to apply a clipping filter to some other parts of human rendering to avoid anything overlapping the tail.
 	// Specifically: update_inv_cloak, update_inv_shirt, update_inv_armor, and update_inv_pants.
@@ -55,12 +57,21 @@
 	if(has_taur_color)
 		tail_s.Blend(taur_color, color_blend_mode)
 
+	var/icon/taur_m = new/icon("icon" = icon, "icon_state" = taur_markings_state, "dir" = image_dir)
+	if(has_taur_color)
+		taur_m.Blend(taur_markings, color_blend_mode)
+
 	var/image/working = image(tail_s)
 	// because these can overlap other organs, we need to layer slightly higher
 	working.layer = -BODYPARTS_LAYER // -FRONT_MUTATIONS_LAYER = tail renders over tits, -BODYPARTS_LAYER = tail renders underneath the tits, as it should
 	working.pixel_x = offset_x
 
+	var/image/markings = image(taur_m)
+	markings.layer = -BODY_ADJ_LAYER
+	markings.pixel_x = offset_x
+
 	. += working
+	. += markings
 
 /*********************************/
 /* TAUR TYPES                    */
@@ -72,6 +83,7 @@ GLOBAL_LIST_INIT(taur_types, subtypesof(/obj/item/bodypart/taur))
 
 	offset_x = -16
 	taur_icon_state = "altnaga_s"
+	taur_markings_state = "naga_tail_markings_lamian_tail" // who tf named these???
 
 	has_taur_color = TRUE
 
@@ -97,6 +109,7 @@ GLOBAL_LIST_INIT(taur_types, subtypesof(/obj/item/bodypart/taur))
 
 	offset_x = -16
 	taur_icon_state = "canine_s"
+	taur_markings_state = "canine_markings"
 	clip_mask_state = "clip_mask_saiga"
 
 	has_taur_color = TRUE
@@ -106,6 +119,7 @@ GLOBAL_LIST_INIT(taur_types, subtypesof(/obj/item/bodypart/taur))
 
 	offset_x = -16
 	taur_icon_state = "drake_s"
+	taur_markings_state = "drake_markings"
 	clip_mask_state = "clip_mask_saiga"
 
 	has_taur_color = TRUE

@@ -220,6 +220,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	var/taur_type = null
 	var/taur_color = "ffffff"
+	var/taur_markings = "ffffff"
 
 	/// Assoc list of culinary preferences, where the key is the type of the culinary preference, and value is food/drink typepath
 	var/list/culinary_preferences = list()
@@ -432,7 +433,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 				var/obj/item/bodypart/taur/T = taur_type
 				var/name = ispath(T) ? T::name : "None"
 				dat += "<b>Taur Body Type:</b> <a href='?_src_=prefs;preference=taur_type;task=input'>[name]</a><BR>"
-				dat += "<b>Taur Color:</b><span style='border: 1px solid #161616; background-color: #[taur_color];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=taur_color;task=input'>Change</a><BR>"
+				dat += "<b>Taur Color:</b> <span style='border: 1px solid #161616; background-color: #[taur_color];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=taur_color;task=input'>Change</a><BR>"
+				dat += "<b>Taur Markings:</b> <span style='border: 1px solid #161616; background-color: #[taur_markings];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=taur_markings;task=input'>Change</a><BR>"
 
 			// LETHALSTONE EDIT BEGIN: add voice type prefs
 			dat += "<b>Voice Type</b>: <a href='?_src_=prefs;preference=voicetype;task=input'>[voice_type]</a><BR>"
@@ -2294,6 +2296,11 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					if(new_taur_color)
 						taur_color = sanitize_hexcolor(new_taur_color)
 
+				if("taur_markings")
+					var/new_taur_markings = color_pick_sanitized(user, "Choose your character's taur markings color:", "Character Preference", "#"+taur_markings)
+					if(new_taur_markings)
+						taur_markings = sanitize_hexcolor(new_taur_markings)
+
 				if("mutant_color")
 					var/new_mutantcolor = color_pick_sanitized(user, "Choose your character's mutant #1 color:", "Character Preference","#"+features["mcolor"])
 					if(new_mutantcolor)
@@ -2862,7 +2869,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				ADD_TRAIT(character, curse2trait(X), TRAIT_GENERIC)
 
 	if(taur_type)
-		character.Taurize(taur_type, "#[taur_color]")
+		character.Taurize(taur_type, "#[taur_color]", "#[taur_markings]")
 	else if(character_setup)
 		// This should only ever ~do~ anything for previews
 		character.ensure_not_taur()
