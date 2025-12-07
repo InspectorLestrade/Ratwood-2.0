@@ -34962,6 +34962,12 @@
 "kEN" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy,
 /area/rogue/indoors/town/manor/rockhill)
+"kEQ" = (
+/obj/structure/fluff/railing/fence{
+	dir = 8
+	},
+/turf/open/water/swamp/deep,
+/area/rogue/outdoors/bograt/west)
 "kET" = (
 /obj/structure/closet/dirthole/grave,
 /turf/open/floor/rogue/dirt,
@@ -228684,8 +228690,8 @@ qdK
 gHA
 wMB
 efu
-qCt
-qCt
+kEQ
+kEQ
 qCt
 qCt
 qCt
@@ -229119,7 +229125,7 @@ efu
 qCt
 qCt
 qCt
-qCt
+kEQ
 qCt
 qCt
 qCt
@@ -229553,7 +229559,7 @@ uJq
 uJq
 uJq
 qCt
-qCt
+kEQ
 qCt
 qCt
 qCt
