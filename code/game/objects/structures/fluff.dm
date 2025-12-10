@@ -1034,9 +1034,12 @@
 
 /obj/structure/fluff/statue/evil
 	name = "idol"
-	desc = "A statue built to the robber-god, Matthios, who stole the gift of fire from the underworld. It is said that he grants the wishes of those pagan bandits (free folk) who feed him money and valuable metals."
+	desc = "An idol, built to the many-faced Matthios. Though none can argue his hatred of the Tyrant's Order and nobility, \
+	they certainly can't imagine what he actually looks like. \
+	This is but one of many depictions to the many-faced god, and yet it appears ready to receive tribute all the same."
 	icon_state = "evilidol"
 	icon = 'icons/roguetown/misc/structure.dmi'
+	damage_deflection = INFINITY//We don't want this smashed normally. Prevents items from doing it damage, by mistake, too.
 // What items the idol will accept
 	var/treasuretypes = list(
 		/obj/item/roguecoin,
@@ -1053,7 +1056,7 @@
 		/obj/item/candle/candlestick/gold,
 		/obj/item/kitchen/fork/silver,
 		/obj/item/kitchen/fork/gold,
-        /obj/item/kitchen/spoon/silver,
+		/obj/item/kitchen/spoon/silver,
 		/obj/item/kitchen/spoon/gold,
 		/obj/item/roguestatue,
 		/obj/item/riddleofsteel,
@@ -1104,7 +1107,7 @@
 					if(player.mind)
 						if(player.mind.has_antag_datum(/datum/antagonist/bandit))
 							var/datum/antagonist/bandit/bandit_players = player.mind.has_antag_datum(/datum/antagonist/bandit)
-							record_round_statistic(STATS_SHRINE_VALUE, W.get_real_price()) 
+							record_round_statistic(STATS_SHRINE_VALUE, W.get_real_price())
 							bandit_players.favor += donatedamnt
 							bandit_players.totaldonated += donatedamnt
 							to_chat(player, ("<font color='yellow'>[user.name] donates [donatedamnt] to the shrine! You now have [bandit_players.favor] favor.</font>"))

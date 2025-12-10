@@ -19,6 +19,7 @@
 	name = "silver ring"
 	icon_state = "ring_s"
 	sellprice = 33
+	is_silver = TRUE
 
 /obj/item/clothing/ring/aalloy
 	name = "decrepit ring"
@@ -153,6 +154,7 @@
 	icon_state = "signet_silver"
 	desc = "A ring of blessed silver, bearing the Archbishop's symbol. By dipping it in melted redtallow, it can seal writs of religious importance."
 	sellprice = 90
+	is_silver = TRUE
 
 /obj/item/clothing/ring/signet/attack_right(mob/user)
 	. = ..()
@@ -256,6 +258,7 @@
 	desc = "A simple silver wedding band complete with an ornate design of a lover's name."
 	icon_state = "s_ring_wedding"
 	sellprice = 3	//You don't get to smelt this down or sell it. No free mams for a loadout item.
+	is_silver = TRUE
 	var/choicename = FALSE
 	var/choicedesc = FALSE
 

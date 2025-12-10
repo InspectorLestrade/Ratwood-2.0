@@ -323,6 +323,7 @@
 		owner.remove_status_effect(src)
 
 /datum/sex_controller/proc/ejaculate()
+	SEND_SIGNAL(user, COMSIG_MOB_EJACULATED)
 	log_combat(user, user, "Ejaculated")
 	user.visible_message(span_love("[user] makes a mess!"))
 	playsound(user, 'sound/misc/mat/endout.ogg', 50, TRUE, ignore_walls = FALSE)

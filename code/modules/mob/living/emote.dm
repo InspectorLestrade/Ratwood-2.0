@@ -510,6 +510,9 @@
 	playsound(target.loc, pick('sound/vo/kiss (1).ogg','sound/vo/kiss (2).ogg'), 100, FALSE, -1)
 	if(user.mind)
 		record_round_statistic(STATS_KISSES_MADE)
+		if(target.mind)
+			SEND_SIGNAL(target, COMSIG_MOB_KISSED)
+		SEND_SIGNAL(user, COMSIG_MOB_KISS)
 
 /datum/emote/living/lick
 	key = "lick"
@@ -1895,6 +1898,19 @@
 	set category = "Noises"
 
 	emote("yip", intentional = TRUE)
+
+/datum/emote/living/yap
+	key = "yap"
+	key_third_person = "yaps"
+	message = "yaps!"
+	emote_type = EMOTE_AUDIBLE
+	message_muffled = "makes a muffled yap!"
+	is_animal = TRUE
+	show_runechat = FALSE
+/mob/living/carbon/human/verb/yap()
+	set name = "Yap"
+	set category = "Noises"
+	emote("yap", intentional = TRUE)
 
 /* Vomit emote */
 /mob/living/carbon/human/verb/emote_vomit()

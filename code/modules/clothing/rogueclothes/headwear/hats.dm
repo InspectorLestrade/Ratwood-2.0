@@ -139,6 +139,8 @@
 	desc = "A noble's chaperon made for the local Marshal. \"How terribly unfortunate you are!\""
 	color = "#641E16"
 	detail_color = "#b68e37ff"
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+	armor = ARMOR_SPELLSINGER // spellsinger hat stats. Drip or drown.
 
 /obj/item/clothing/head/roguetown/chaperon/noble/guildmaster
 	name = "Guildmaster's chapereon"

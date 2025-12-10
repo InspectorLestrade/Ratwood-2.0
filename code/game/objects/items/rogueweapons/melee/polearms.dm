@@ -16,6 +16,10 @@
 /datum/intent/spear/thrust/militia
 	penfactor = 40
 
+/datum/intent/spear/thrust/blunted
+	penfactor = BLUNT_DEFAULT_PENFACTOR
+	intent_intdamage_factor = BLUNT_DEFAULT_INT_DAMAGEFACTOR
+
 /datum/intent/spear/bash
 	name = "bash"
 	blade_class = BCLASS_BLUNT
@@ -112,7 +116,6 @@
 	item_d_type = "blunt"
 	intent_intdamage_factor = BLUNT_DEFAULT_INT_DAMAGEFACTOR
 
-
 /datum/intent/rend
 	name = "rend"
 	icon_state = "inrend"
@@ -149,7 +152,7 @@
 /datum/intent/partizan/peel
 	name = "armor peel"
 	icon_state = "inpeel"
-	attack_verb = list("<font color ='#e7e7e7'>strongly peels</font>")
+	attack_verb = list("<font color ='#e7e7e7'>peels</font>")
 	animname = "cut"
 	blade_class = BCLASS_PEEL
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
@@ -158,14 +161,14 @@
 	swingdelay = 0
 	damfactor = 0.01
 	item_d_type = "slash"
-	peel_divisor = 5
+	peel_divisor = 4
 	reach = 2
 
 //Old partizan peel, for the naginata.
 /datum/intent/partizan/peel/nag
-	attack_verb = list("<font color ='#e7e7e7'>peels</font>")
+	attack_verb = list("<font color ='#e7e7e7'>weakly peels</font>")
 	swingdelay = 5
-	peel_divisor = 4
+	peel_divisor = 5
 
 /datum/intent/spear/bash/ranged/quarterstaff
 	damfactor = 1
@@ -1262,6 +1265,34 @@
 				return list("shrink" = 0.8,"sx" = -9,"sy" = 5,"nx" = 9,"ny" = 5,"wx" = -4,"wy" = 4,"ex" = 4,"ey" = 4,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -38,"sturn" = 37,"wturn" = 32,"eturn" = -23,"nflip" = 0,"sflip" = 8,"wflip" = 8,"eflip" = 0)
 			if("wielded")
 				return list("shrink" = 0.8,"sx" = 8,"sy" = 0,"nx" = -1,"ny" = 0,"wx" = -5,"wy" = -1,"ex" = 3,"ey" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 7,"sturn" = -7,"wturn" = 16,"eturn" = -22,"nflip" = 8,"sflip" = 0,"wflip" = 8,"eflip" = 0)
+
+//Only a 'woodenstaff' for the purpose of CDR on spells.
+/obj/item/rogueweapon/woodstaff/sojourner
+	name = "sojourner staff"
+	desc = "What remains of an old psydonic spear. The tip is blunted, with both barbs and trident-like head removed. \
+	It serves a more noble purpose, now, as a sojourner's casting implement. Though, with enough force, one may still drive the tip forward."
+	icon_state = "psystaff"//Temp
+	possible_item_intents = list(SPEAR_BASH, /datum/intent/special/magicarc)
+	gripped_intents = list(/datum/intent/spear/thrust/blunted, /datum/intent/mace/smash/wood/ranged, /datum/intent/special/magicarc)
+	force = 18
+	force_wielded = 20//Worse than just using a knife, really, despite the range.
+	thrown_bclass = BCLASS_STAB
+	throwforce = 20
+	max_integrity = 150
+	max_blade_int = 180
+	smeltresult = /obj/item/ingot/silverblessed
+	is_silver = TRUE
+
+/obj/item/rogueweapon/woodstaff/sojourner/ComponentInitialize()
+	AddComponent(\
+		/datum/component/silverbless,\
+		pre_blessed = BLESSING_NONE,\
+		silver_type = SILVER_PSYDONIAN,\
+		added_force = 0,\
+		added_blade_int = 50,\
+		added_int = 50,\
+		added_def = 2,\
+	)
 
 /obj/item/rogueweapon/woodstaff/quarterstaff
 	name = "wooden quarterstaff"

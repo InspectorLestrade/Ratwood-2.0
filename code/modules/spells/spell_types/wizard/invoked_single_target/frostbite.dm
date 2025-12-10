@@ -5,11 +5,11 @@
 	desc = "Freeze your enemy with an icy blast that does low damage, but reduces the target's Speed for a considerable length of time."
 	overlay_state = "frostbite"
 	releasedrain = 50
-	chargetime = 8
+	chargetime = 12
 	recharge_time = 25 SECONDS
 	range = 7
 	warnie = "spellwarning"
-	movement_interrupt = FALSE
+	movement_interrupt = TRUE
 	no_early_release = TRUE
 	chargedloop = null
 	sound = 'sound/magic/whiteflame.ogg'
@@ -30,3 +30,4 @@
 		target.apply_status_effect(/datum/status_effect/buff/frostbite/) //apply debuff
 		target.adjustFireLoss(12) //damage
 		target.adjustBruteLoss(12)
+		playsound(get_turf(target), 'sound/misc/bamf.ogg', 100, TRUE)

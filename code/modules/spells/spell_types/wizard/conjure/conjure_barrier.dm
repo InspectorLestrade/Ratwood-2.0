@@ -1,19 +1,20 @@
-//Sojourner exclusive. Meant to facilitate being super protected from magic. Don't hand this out.
+//Sojourner exclusive. Meant to facilitate being super protected from magic. Don't hand this out readily.
 //Full anti-magic, with a unique trait to allow the user to cast under the effects of it.
 /obj/effect/proc_holder/spell/self/conjure_armor/barrier
 	name = "Conjure Barrier"
-	desc = "Conjure an arcyne barrier. Granting long-lasting protection from attacks of an arcyne nature. Your armor slot must be free to use this.\n\
+	desc = "Conjure an arcyne barrier. Granting long-lasting immunity from attacks of an arcyne nature. Your armor slot must be free to use this.\n\
 	The barrier lasts until it is broken, a new one is summoned, or the spell is forgotten."
-	overlay_state = "DEFY"
-	sound = list('sound/magic/whiteflame.ogg')
+	overlay_state = "barrier"//temp
+	sound = list('sound/misc/murderbeast.ogg')//What they'll do when they get you.
 
 	releasedrain = 50
 	chargedrain = 1
-	chargetime = 3 SECONDS
+	chargetime = 6 SECONDS
 	no_early_release = TRUE
-	recharge_time = 3 MINUTES
+	recharge_time = 6 MINUTES
 
 	warnie = "spellwarning"
+	movement_interrupt = TRUE
 	no_early_release = TRUE
 	antimagic_allowed = FALSE
 	charging_slowdown = 3
@@ -32,20 +33,19 @@
 
 /obj/effect/proc_holder/spell/self/conjure_armor/barrier/Destroy()
 	if(src.conjured_armor)
-		conjured_armor.visible_message(span_warning("The [conjured_armor]'s borders begin to shimmer and fade, before it vanishes entirely!"))
+		conjured_armor.visible_message(span_warning("The [conjured_armor]'s borders begin to crackle, before shattering in a shower of sparks!"))
 		qdel(conjured_armor)
 	return ..()
 
 /obj/item/clothing/suit/roguetown/arcyne_barrier
 	name = "arcyne barrier"
 	desc = "An art mastered by Naledi Sojourners. To forego protection in favour of dispersion. \
-	A barrier against the winds of fate, powered by their own spark. \
-	Magyks will have no effect upon the wearer."
+	A barrier against the winds of fate, powered by their own spark. Magyks will have no effect upon the user."
 	max_integrity = 25//Intended to be easy to break.
 	break_sound = 'modular_azurepeak/sound/spellbooks/crystal.ogg'
 	drop_sound = 'modular_azurepeak/sound/spellbooks/glass.ogg'
 	icon = 'icons/mob/actions/roguespells.dmi'
-	icon_state = "DEFY"
+	icon_state = "barrier"
 	slot_flags = ITEM_SLOT_ARMOR
 	mob_overlay_icon = null
 	sleeved = null
@@ -64,7 +64,8 @@
 
 /obj/item/clothing/suit/roguetown/arcyne_barrier/proc/dispel()
 	if(!QDELETED(src))
-		src.visible_message(span_warning("The [src]'s borders begin to shimmer and fade, before it vanishes entirely!"))
+		src.visible_message(span_warning("The [src]'s borders begin to crackle, before shattering in a shower of sparks!"))
+		playsound(get_turf(src), break_sound, 100, TRUE)
 		qdel(src)
 
 /obj/item/clothing/suit/roguetown/arcyne_barrier/obj_break()
@@ -89,7 +90,7 @@
 	id = "arcyne_barrier"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/arcyne_barrier
 	duration = -1
-	examine_text = "<font color='blue'>SUBJECTPRONOUN is wreathed by sparks of the arcyne!"
+	examine_text = "<font color='blue'>SUBJECTPRONOUN is wreathed by sparks of the arcyne!</font>"
 	var/outline_colour = "#12f0f0"
 
 /atom/movable/screen/alert/status_effect/buff/arcyne_barrier
