@@ -396,3 +396,8 @@
 	stressadd = -1
 	desc = span_green("That fermented crab was not the most pleasant dish ever, but youthful vigor in my body was worth the sacrifice!")
 	timer = 3 MINUTES
+
+/datum/stressevent/dragon_scale
+	stressadd = -6
+	desc = span_suppradio("The Hoardmaster's greed plays with my mind...")
+	timer = INFINITY

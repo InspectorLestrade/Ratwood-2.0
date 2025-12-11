@@ -8,7 +8,7 @@
 	maximum_possible_slots = 2 //Too many plate armoured fellas is scawy ...
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg' // big chungus gets the wall too
 	subclass_social_rank = SOCIAL_RANK_MINOR_NOBLE
-	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_HEAVYARMOR, TRAIT_NOBLE, TRAIT_DEATHBYSNUSNU)
+	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_DISGRACED_NOBLE)
 	subclass_stats = list(
 		STATKEY_CON = 3, //dark souls 3 dual greatshield moment
 		STATKEY_STR = 2,
@@ -35,10 +35,6 @@
 
 /datum/outfit/job/roguetown/bandit/hedgeknight/pre_equip(mob/living/carbon/human/H)
 	..()
-	if (!(istype(H.patron, /datum/patron/inhumen/zizo) || istype(H.patron, /datum/patron/inhumen/matthios) || istype(H.patron, /datum/patron/inhumen/graggar) || istype(H.patron, /datum/patron/inhumen/baotha)))
-		to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))
-		H.set_patron(/datum/patron/inhumen/matthios)
-
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
 	gloves = /obj/item/clothing/gloves/roguetown/chain/blk
 	pants = /obj/item/clothing/under/roguetown/chainlegs/blk
@@ -80,9 +76,3 @@
 				beltl = /obj/item/rogueweapon/mace/steel
 				H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_MASTER, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_JOURNEYMAN, TRUE)
-
-	if(!istype(H.patron, /datum/patron/inhumen/matthios))
-		var/inputty = input(H, "Would you like to change your patron to Matthios?", "The Transactor calls", "No") as anything in list("Yes", "No")
-		if(inputty == "Yes")
-			to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))
-			H.set_patron(/datum/patron/inhumen/matthios)

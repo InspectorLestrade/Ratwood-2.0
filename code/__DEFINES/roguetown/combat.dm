@@ -24,5 +24,5 @@ Medical defines
 #define CRIT_RESISTANCE_STACKS_PLAYER 3
 #define CRIT_RESISTANCE_STACKS_NPC 2
 #define CRIT_RESISTANCE_STACKS_OP 1 // Noblood / Revenant etc.
-#define CRIT_RESISTANCE_EFFECTIVE_BLEEDRATE 0.9 // How much CR reduce bleedrate by. Inverse values are higher. Was 0.5, now 0.9.
+#define CRIT_RESISTANCE_EFFECTIVE_BLEEDRATE 0.8 // How much CR reduce bleedrate by. Inverse values are higher. Was 0.5, now 0.8.
 #define CRIT_RESISTANCE_TIMER_CD 30 SECONDS // Cooldown between guaranteed CR procs. DOES NOT APPLY TO DISMEMBERMENT.
