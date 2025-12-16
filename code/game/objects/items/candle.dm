@@ -176,7 +176,7 @@
 
 /obj/item/candle/candlestick/silver/single
 	name = "one-stick silver candlestick"
-	"A golden stick with a little prick at the end made to hold candles on a comfortable way. You could also probably whack someone with it if you're really desperate."
+	desc = "A golden stick with a little prick at the end made to hold candles on a comfortable way. You could also probably whack someone with it if you're really desperate."
 	icon_state = "singlescandelabra"
 	sellprice = 50
 
