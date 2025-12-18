@@ -18,8 +18,8 @@
 	class_select_category = CLASS_CAT_ZYBANTU
 	subclass_languages = list(/datum/language/celestial)
 	category_tags = list(CTAG_MERCENARY)
-	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2)
-	subclass_spellpoints = 15
+	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2)
+	subclass_spellpoints = 8//We'll focus on this being a combination spellblade.
 	subclass_stats = list(
 		STATKEY_INT = 3,
 		STATKEY_SPD = 2,
@@ -27,8 +27,8 @@
 		STATKEY_CON = -2,
 	)
 	subclass_skills = list(
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/knives = SKILL_LEVEL_NOVICE,
 		/datum/skill/magic/arcane = SKILL_LEVEL_JOURNEYMAN,
@@ -79,7 +79,7 @@
 //Their sabre. Peel capable when off. Does burn when on. OldRW rage inducing classic, returned.
 //Now properly inflicts burn wounds, on top of the burn type damage. Very painful.
 /obj/item/rogueweapon/sword/sabre/newmoon
-	name = "Freezing Saber"
+	name = "freezing saber"
 	desc = "A fragile sabre adorned with a bright blue freezing mist. Holding the blade feels like it might give you frostbite."
 	icon = 'icons/roguetown/weapons/32.dmi'
 	icon_state = "nm_saber"

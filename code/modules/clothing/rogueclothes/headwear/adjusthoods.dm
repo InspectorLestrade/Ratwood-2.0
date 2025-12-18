@@ -60,7 +60,7 @@
 	name = "reinforced hood"
 	armor = ARMOR_REINFORCED_HOOD
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
-	max_integrity = 150
+	max_integrity = 120//+20 over base. -30 from previous value.
 	blocksound = SOFTHIT
 
 /obj/item/clothing/head/roguetown/roguehood/shalal
