@@ -176,8 +176,6 @@
 
 // --------- IRON -----------
 
-
-
 /datum/anvil_recipe/tools/iron/blowrod
 	name = "Glass Blowing Rod"
 	req_bar = /obj/item/ingot/iron
