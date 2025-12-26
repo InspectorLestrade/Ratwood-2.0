@@ -1089,6 +1089,13 @@
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_halfplate
 	craftdiff = 5
 
+/datum/anvil_recipe/armor/blacksteel/ancienthalfplatechest
+	name = "Ancient Blacksteel Half Plate Armor (+2 Blacksteel, +1 Cured Hide)"
+	req_bar = /obj/item/ingot/blacksteel
+	additional_items = list(/obj/item/ingot/blacksteel, /obj/item/ingot/blacksteel, /obj/item/natural/hide/cured)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_halfplate/ancient
+	craftdiff = 5
+
 /datum/anvil_recipe/armor/blacksteel/modern/plategloves
 	name = "Plate Gauntlets, Blacksteel"
 	req_bar = /obj/item/ingot/blacksteel

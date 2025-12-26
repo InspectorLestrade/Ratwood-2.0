@@ -44,7 +44,7 @@
 	bleed_rate = 1
 	sew_threshold = 25
 	woundpain = 5
-	clotting_rate = 0.1
+	clotting_rate = 0.05
 	clotting_threshold = 0.25
 
 	sewn_clotting_threshold = null
