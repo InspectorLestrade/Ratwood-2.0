@@ -3,7 +3,7 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel half-plate"
 	desc = "\'Adventurer-fit\' plate armor with pauldrons. The poor fitting leaves many small gaps for daggers and bolts to pierce something vital, so a gambeson is recommended."
-	body_parts_covered = COVERAGE_TORSO
+	body_parts_covered = COVERAGE_ALL_BUT_LEGS // Half plate needs to be better than a cuirass and to be consistent with other half plates
 	icon_state = "halfplate"
 	item_state = "halfplate"
 	armor = ARMOR_PLATE
@@ -28,7 +28,7 @@
 /obj/item/clothing/suit/roguetown/armor/plate/iron
 	name = "iron half-plate"
 	desc = "A basic half-plate of iron, protective and moderately durable."
-	body_parts_covered = CHEST | VITALS | LEGS // Reflects the sprite, which lacks pauldrons.
+	body_parts_covered = COVERAGE_ALL_BUT_LEGS // I don't care what the sprite says, keep half plate consistent or add pauldrons to the sprite
 	icon_state = "ihalfplate"
 	item_state = "ihalfplate"
 	boobed = FALSE	//the armor just looks better with this, makes sense and is 8 sprites less
@@ -464,7 +464,7 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel cuirass"
 	desc = "A basic cuirass of steel. Lightweight and durable. A crossbow bolt will probably go right through this, but not an arrow."
-	body_parts_covered = COVERAGE_VEST
+	body_parts_covered = COVERAGE_TORSO
 	icon_state = "cuirass"
 	item_state = "cuirass"
 	armor = ARMOR_CUIRASS
@@ -516,7 +516,7 @@
 	icon_state = "ornatecuirass"
 	desc = "An ornate steel cuirass, fitted with tassets for additional coverage. The intricate fluting not only attracts the maidens, but also strengthens the steel's resistance against repeated impacts."
 
-	body_parts_covered = CHEST | VITALS | LEGS
+	body_parts_covered = COVERAGE_TORSO
 	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/fluted/ornate
